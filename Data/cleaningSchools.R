@@ -177,11 +177,11 @@ resolvedMULTICOUNTY$C18SZSET[noPopIdx]
 resolvedMULTICOUNTY <-
   resolvedMULTICOUNTY %>%
   group_by(COUNTYFIPS) %>%
-  slice_max(order_by=POPULATION)
+  slice_max(order_by=TOT_ENROLL)
   
 # Now we only have one school per county for  4-year institutions that enroll undergraduates full time
 saveRDS(resolvedMULTICOUNTY, "./Final Project/cleanSchools")
-saveRDS(resolvedMULTICOUNTY, "./Final Project/cleanSchools.csv")
+fwrite(resolvedMULTICOUNTY, "./Final Project/cleanSchools.csv")
   
   
   
