@@ -1,3 +1,6 @@
+# CDC covid data since it's too large
+/Data/United_States_COVID-19_County_Level_of_Community_Transmission_Historical_Changes.csv
+
 # History files
 .Rhistory
 .Rapp.history
