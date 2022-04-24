@@ -69,15 +69,17 @@ mergedTrimmedSample$vaxPolicySchoolnameCHECK <- match
 
 vaxPolicyMatch <- 
   vaxPolicy %>%
-  select(-c(State, allEmployees, someEmployees, resStudentsOnly, boosterRequired, statePol2020)) %>%
+  select(-c(allEmployees, someEmployees, resStudentsOnly, boosterRequired, statePol2020)) %>%
   rename("announceDateCHECK" = "announceDate",
          "typeCHECK" = "type",
          "allStudentsCHECK" = "allStudents",
-         "urlCHECK" = "url")
+         "urlCHECK" = "url",
+         "stateCHECK"="State")
 
 mergedUnverified <- left_join(mergedTrimmedSample, vaxPolicyMatch,
                          by = c("vaxPolicySchoolnameCHECK"="school"))
 
+setkey(mergedUnverified, ipsedID)
 fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 
 # THIS IS VERY TENTATIVE MATCHING! Jordan and I need to manually confirm all of these,
