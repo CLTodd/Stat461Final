@@ -184,6 +184,15 @@ resolvedMULTICOUNTY <-
   resolvedMULTICOUNTY %>%
   group_by(COUNTYFIPS) %>%
   slice_max(order_by=TOT_ENROLL)
+
+######## 4/24/22 ###########################
+# While verifying the data I noticed that the following schools made it into the sample that shouldn't have
+# because they are not in our desired population
+wrongSchools <- c("Ohio State University-Newark Campus") # not a year, only do up to 3 years: https://newark.osu.edu/academics/degrees-at-newark/
+wrongIPSEDID <- c(204705)
+resolvedMULTICOUNTY <- resolvedMULTICOUNTY[-which(204705 == resolvedMULTICOUNTY$UNITID),]
+
+########################################
   
 # Now we only have one school per county for  4-year institutions that enroll undergraduates full time
 saveRDS(resolvedMULTICOUNTY, "./Data/cleanSchools")

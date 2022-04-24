@@ -89,13 +89,7 @@ fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 
 #########################################
 
-######## 4/24/22 ###########################
-# While verifying the data I noticed that the following schools made it into the sample that shouldn't have
-# because they are not in our desired population
-wrongSchools <- c("Ohio State University-Newark Campus") # not a year, only do up to 3 years: https://newark.osu.edu/academics/degrees-at-newark/
-wrongIPSEDID <- c(204705)
 
-########################################
 
 # Save the data
 setkey(mergedFull, "UNITID")
