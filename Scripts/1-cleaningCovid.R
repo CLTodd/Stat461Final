@@ -12,7 +12,7 @@ library(lubridate)
 
 # Read in the CDC historical covid data
 # Data source: https://data.cdc.gov/Public-Health-Surveillance/United-States-COVID-19-County-Level-of-Community-T/nra9-vzzn
-covidDataRaw <- fread("./Final Project/United_States_COVID-19_County_Level_of_Community_Transmission_Historical_Changes.csv")
+covidDataRaw <- fread("./Data/United_States_COVID-19_County_Level_of_Community_Transmission_Historical_Changes.csv")
 
 # Replace "suppressed" values with NA and remove commas from numbers
 # Remove the old version of the variables
@@ -63,7 +63,7 @@ covidDataSummary <-
 table(is.na(covidData$casesPerCapita7DayChange))
 summary(covidDataSummary$count)
   
-saveRDS(covidDataSummary, "./Final Project/cleanCovid")
-fwrite(covidDataSummary, "./Final Project/cleanCovid.csv")
+saveRDS(covidDataSummary, "./Data/cleanCovid")
+fwrite(covidDataSummary, "./Data/cleanCovid.csv")
 
-saveRDS(negCounties, "./Final Project/countiesWithNegativeCovidRates")
+saveRDS(negCounties, "./Data/countiesWithNegativeCovidRates")

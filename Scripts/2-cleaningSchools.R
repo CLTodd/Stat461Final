@@ -14,14 +14,14 @@ library(data.table)
 # Reading in the Data
 
 # HIFLD data
-collegesRaw <- fread(input="./Final Project/Colleges_and_Universities.csv",
+collegesRaw <- fread(input="./Data/Colleges_and_Universities.csv",
                      header=TRUE,
                      sep=",")
 # hd2020 survey data
-hd <- read.csv("./Final Project/hd2020.csv")
+hd <- read.csv("./Data/hd2020.csv")
 
 # ic2020 survey data
-ic <- read.csv("./Final Project/ic2020.csv")
+ic <- read.csv("./Data/ic2020.csv")
 
 
 # Join all the college data (ic2020, hd2020, and the HIFLD data)
@@ -180,8 +180,8 @@ resolvedMULTICOUNTY <-
   slice_max(order_by=TOT_ENROLL)
   
 # Now we only have one school per county for  4-year institutions that enroll undergraduates full time
-saveRDS(resolvedMULTICOUNTY, "./Final Project/cleanSchools")
-fwrite(resolvedMULTICOUNTY, "./Final Project/cleanSchools.csv")
+saveRDS(resolvedMULTICOUNTY, "./Data/cleanSchools")
+fwrite(resolvedMULTICOUNTY, "./Data/cleanSchools.csv")
   
   
   

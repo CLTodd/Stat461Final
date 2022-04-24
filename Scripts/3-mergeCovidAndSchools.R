@@ -10,8 +10,8 @@ library(data.table)
 library(dplyr)
 
 # Read in data
-covid <- data.table(readRDS("./Final Project/cleanCovid"))
-schools <- data.table(readRDS("./Final Project/cleanSchools"))
+covid <- data.table(readRDS("./Data/cleanCovid"))
+schools <- data.table(readRDS("./Data/cleanSchools"))
 
 # Merge data
 mergedFull <-
@@ -38,7 +38,7 @@ mergedTrimmed <-
          "state"="STATE")
 
 # Three of the counties with negative values are in this data set. 
-counties <- readRDS("./Final Project/countiesWithNegativeCovidRates")
+counties <- readRDS("./Data/countiesWithNegativeCovidRates")
 table(counties %in% mergedTrimmed$fipsCode)
 # This was a problem before but we retroactively dealt with the negative value in the county that had this issue
 
@@ -52,13 +52,13 @@ table(counties %in% mergedTrimmedSample$fipsCode)
 
 # Save the data
 setkey(mergedFull, "UNITID")
-saveRDS(mergedFull, "./Final Project/mergedFull")
-fwrite(mergedFull, "./Final Project/mergedFull.csv")
+saveRDS(mergedFull, "./Data/mergedFull")
+fwrite(mergedFull, "./Data/mergedFull.csv")
 
 setkey(mergedTrimmed, "ipsedID")
-saveRDS(mergedTrimmed, "./Final Project/mergedTrimmed")
-fwrite(mergedTrimmed, "./Final Project/mergedTrimmed.csv")
+saveRDS(mergedTrimmed, "./Data/mergedTrimmed")
+fwrite(mergedTrimmed, "./Data/mergedTrimmed.csv")
 
 setkey(mergedTrimmedSample, "ipsedID")
-saveRDS(mergedTrimmedSample, "./Final Project/mergedTrimmedSample")
-fwrite(mergedTrimmedSample, "./Final Project/mergedTrimmedSample.csv")
+saveRDS(mergedTrimmedSample, "./Data/mergedTrimmedSample")
+fwrite(mergedTrimmedSample, "./Data/mergedTrimmedSample.csv")
