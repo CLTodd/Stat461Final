@@ -53,7 +53,13 @@ fourYrSchools <-
            # FT_UG is a binary variable indicating whether undergrads can be enrolled full time 
            # I'm going to assume a -2 value means NA (as in the data is missing).
            # Schools that don't enroll full-time undergrads have a value of 2.
-           FT_UG ==1)
+           FT_UG ==1 &
+           # According to the ic2020 data, DISTNCED should refer to whether a school
+           # Is a completely online university.
+           # From manually checking schools from the data, I believe
+           # 1=completely online, 2=otherwise, and not sure what negative values mean
+           # (checked Amridge University and Penn State to confirm)
+           DISTNCED==2)
 
 # Here we resolve the missingness and mismatching in the sector variable
 resolvedSector <-

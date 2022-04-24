@@ -51,7 +51,7 @@ mergedTrimmedSample <- mergedTrimmed[rows,]
 table(counties %in% mergedTrimmedSample$fipsCode)
 # Again, this was a problem but it was dealt with
 
-############## 4/24/22
+############### 4/23/22  ############3# 
 # Merge the vaccine policy data with the covid data
 
 vaxPolicy <- readRDS("./Data/vaxPolicies")
@@ -87,7 +87,15 @@ fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 # Not saving the RDS for this because its not confirmed to be correct, 
 # we'll update the spreadsheet as we do manual corrections
 
-#####################
+#########################################
+
+######## 4/24/22 ###########################
+# While verifying the data I noticed that the following schools made it into the sample that shouldn't have
+# because they are not in our desired population
+wrongSchools <- c("Ohio State University-Newark Campus") # not a year, only do up to 3 years: https://newark.osu.edu/academics/degrees-at-newark/
+wrongIPSEDID <- c(204705)
+
+########################################
 
 # Save the data
 setkey(mergedFull, "UNITID")
