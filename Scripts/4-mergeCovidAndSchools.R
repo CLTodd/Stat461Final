@@ -8,6 +8,7 @@ rm(list=ls())
 
 library(data.table)
 library(dplyr)
+library(stringdist)
 
 # Read in data
 covid <- data.table(readRDS("./Data/cleanCovid"))
@@ -49,6 +50,42 @@ mergedTrimmedSample <- mergedTrimmed[rows,]
 # of course...
 table(counties %in% mergedTrimmedSample$fipsCode)
 # Again, this was a problem but it was dealt with
+
+############## 4/24/22
+# Merge the vaccine policy data with the covid data
+
+vaxPolicy <- readRDS("./Data/vaxPolicies")
+
+match <- rep(NA, nrow(mergedTrimmedSample))
+i <- 1
+for (school in mergedTrimmedSample$school){
+  # Find the index of the school name in the vaccine policy data that is closest to this school name from the merged data
+  matchIdx <- which.min(stringdist(school, vaxPolicy$school))
+  match[i] <- vaxPolicy$school[[matchIdx]]
+  i <- i + 1
+}
+
+mergedTrimmedSample$vaxPolicySchoolnameCHECK <- match
+
+vaxPolicyMatch <- 
+  vaxPolicy %>%
+  select(-c(State, allEmployees, someEmployees, resStudentsOnly, boosterRequired, statePol2020)) %>%
+  rename("announceDateCHECK" = "announceDate",
+         "typeCHECK" = "type",
+         "allStudentsCHECK" = "allStudents",
+         "urlCHECK" = "url")
+
+mergedUnverified <- left_join(mergedTrimmedSample, vaxPolicyMatch,
+                         by = c("vaxPolicySchoolnameCHECK"="school"))
+
+fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
+
+# THIS IS VERY TENTATIVE MATCHING! Jordan and I need to manually confirm all of these,
+# and then fill in the missingness where necessary. Hopefully the listed URL's will help us
+# Not saving the RDS for this because its not confirmed to be correct, 
+# we'll update the spreadsheet as we do manual corrections
+
+#####################
 
 # Save the data
 setkey(mergedFull, "UNITID")

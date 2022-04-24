@@ -21,6 +21,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 102845,Charter College,Clark County,53011,WA,156.276549261084
 104179,University of Arizona,Pima County,4019,AZ,208.624730295567
 104586,Embry-Riddle Aeronautical University-Prescott,Yavapai County,4025,AZ,175.604146551724
+104717,Grand Canyon University,Maricopa County,4013,AZ,244.661413793103
 105297,Dine College,Apache County,4001,AZ,266.592463054187
 105330,Northern Arizona University,Coconino County,4005,AZ,261.49650862069
 106245,University of Arkansas at Little Rock,Pulaski County,5119,AR,226.615375615764
@@ -44,11 +45,10 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 110510,California State University-San Bernardino,San Bernardino County,6071,CA,232.108620689655
 110538,California State University-Chico,Butte County,6007,CA,155.968360837438
 110556,California State University-Fresno,Fresno County,6019,CA,218.967793103448
+110565,California State University-Fullerton,Orange County,6059,CA,159.671301724138
 110617,California State University-Sacramento,Sacramento County,6067,CA,168.766001231527
 110635,University of California-Berkeley,Alameda County,6001,CA,139.460205665025
 110644,University of California-Davis,Yolo County,6113,CA,155.204799261084
-110653,University of California-Irvine,Orange County,6059,CA,159.671301724138
-110662,University of California-Los Angeles,Los Angeles County,6037,CA,243.227751231527
 110671,University of California-Riverside,Riverside County,6065,CA,216.089667487685
 110680,University of California-San Diego,San Diego County,6073,CA,208.018078817734
 110705,University of California-Santa Barbara,Santa Barbara County,6083,CA,174.841089901478
@@ -65,6 +65,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 123457,Simpson University,Shasta County,6089,CA,175.788746305419
 123554,Saint Mary's College of California,Contra Costa County,6013,CA,151.205162561576
 123572,Sonoma State University,Sonoma County,6097,CA,150.057736453202
+123961,University of Southern California,Los Angeles County,6037,CA,243.227751231527
 126182,Adams State University,Alamosa County,8003,CO,235.001422413793
 126562,University of Colorado Denver/Anschutz Medical Campus,Adams County,8001,CO,219.0341908867
 126614,University of Colorado Boulder,Boulder County,8013,CO,167.056328817734
@@ -211,7 +212,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 154527,Wartburg College,Bremer County,19017,IA,184.586556650246
 154590,William Penn University,Mahaska County,19123,IA,186.158733990148
 154712,Benedictine College,Atchison County,20005,KS,224.345873152709
-154721,Bethany College,McPherson County,20113,KS,232.105472906404
 154749,Bethel College-North Newton,Harvey County,20079,KS,238.722174876847
 155007,Donnelly College,Wyandotte County,20209,KS,243.867358374384
 155025,Emporia State University,Lyon County,20111,KS,256.619240147783
@@ -220,6 +220,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 155317,University of Kansas,Douglas County,20045,KS,178.768291871921
 155399,Kansas State University,Riley County,20161,KS,156.223697044335
 155414,Kansas Wesleyan University,Saline County,20169,KS,223.445911330049
+155511,McPherson College,McPherson County,20113,KS,232.105472906404
 155627,Ottawa University-Ottawa,Franklin County,20059,KS,229.787996305419
 155681,Pittsburg State University,Crawford County,20037,KS,262.777387931035
 155812,University of Saint Mary,Leavenworth County,20103,KS,203.330466748768
@@ -288,6 +289,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 164580,Babson College,Norfolk County,25021,MA,161.411020935961
 164988,Boston University,Suffolk County,25025,MA,227.51663546798
 165024,Bridgewater State University,Plymouth County,25023,MA,191.321426108374
+165820,Fitchburg State University,Worcester County,25027,MA,199.918272167488
 166027,Harvard University,Middlesex County,25017,MA,175.491366995074
 166629,University of Massachusetts-Amherst,Hampshire County,25015,MA,149.228958128079
 166692,Massachusetts Maritime Academy,Barnstable County,25001,MA,141.912131773399
@@ -295,7 +297,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 167987,University of Massachusetts-Dartmouth,Bristol County,25005,MA,228.899623152709
 168263,Westfield State University,Hampden County,25013,MA,246.084651477833
 168342,Williams College,Berkshire County,25003,MA,160.447261083744
-168421,Worcester Polytechnic Institute,Worcester County,25027,MA,199.918272167488
 168546,Albion College,Calhoun County,26025,MI,219.447735221675
 168591,Alma College,Gratiot County,26057,MI,226.415737684729
 168740,Andrews University,Berrien County,26021,MI,194.873852216749
@@ -411,11 +412,11 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 185262,Kean University,Union County,34039,NJ,225.045155172414
 185572,Monmouth University,Monmouth County,34025,NJ,229.301133004926
 185590,Montclair State University,Passaic County,34031,NJ,249.159294334975
-186131,Princeton University,Mercer County,34021,NJ,179.375348522168
 186371,Rutgers University-Camden,Camden County,34007,NJ,214.131660098522
 186380,Rutgers University-New Brunswick,Middlesex County,34023,NJ,202.581130541872
 186399,Rutgers University-Newark,Essex County,34013,NJ,230.128745073892
 186876,Stockton University,Atlantic County,34001,NJ,223.832752463054
+187046,Thomas Edison State University,Mercer County,34021,NJ,179.375348522168
 187596,Navajo Technical University,McKinley County,35031,NM,311.573736453202
 187648,Eastern New Mexico University-Main Campus,Roosevelt County,35041,NM,225.302865763547
 187745,Institute of American Indian and Alaska Native Culture and Arts Development,Santa Fe County,35049,NM,162.341612068966
@@ -442,7 +443,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 193973,Niagara University,Niagara County,36063,NY,197.774242610837
 194392,Paul Smiths College of Arts and Science,Franklin County,36033,NY,162.677198275862
 194824,Rensselaer Polytechnic Institute,Rensselaer County,36083,NY,171.411581280788
-195030,University of Rochester,Monroe County,36055,NY,177.691392857143
+195003,Rochester Institute of Technology,Monroe County,36055,NY,177.691392857143
 195164,St Bonaventure University,Cattaraugus County,36009,NY,173.845983990148
 195243,St. Thomas Aquinas College,Rockland County,36087,NY,245.263604679803
 195809,St. John's University-New York,Queens County,36081,NY,245.90042364532
@@ -579,7 +580,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 211291,Bucknell University,Union County,42119,PA,222.145291871921
 211361,California University of Pennsylvania,Washington County,42125,PA,211.663825123153
 211644,Clarion University of Pennsylvania,Clarion County,42031,PA,181.669314039409
-211981,Delaware Valley University,Bucks County,42017,PA,169.12225
 212115,East Stroudsburg University of Pennsylvania,Monroe County,42089,PA,187.273178571429
 212160,Edinboro University of Pennsylvania,Erie County,42049,PA,182.474471674877
 212656,Geneva College,Beaver County,42007,PA,211.009886699507
@@ -621,7 +621,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 217907,Coker University,Darlington County,45031,SC,243.59900862069
 217998,Erskine College,Abbeville County,45001,SC,230.328266009852
 218061,Francis Marion University,Florence County,45041,SC,259.977554187192
-218070,Furman University,Greenville County,45045,SC,283.534075123153
 218229,Lander University,Greenwood County,45047,SC,273.624386699507
 218238,Limestone University,Cherokee County,45021,SC,220.050048029557
 218399,Morris College,Sumter County,45085,SC,224.540407635468
@@ -748,6 +747,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 232982,Old Dominion University,Norfolk City,51710,VA,149.749503694581
 233277,Radford University,Radford City,51750,VA,228.422009852217
 233295,Randolph-Macon College,Hanover County,51085,VA,173.529831280788
+233356,Bon Secours Memorial College of Nursing,Henrico County,51087,VA,168.29457635468
 233426,Roanoke College,Salem City,51775,VA,189.224208128079
 233541,Shenandoah University,Winchester City,51840,VA,190.566965517241
 233611,Southern Virginia University,Buena Vista City,51530,VA,243.472789408867
@@ -843,6 +843,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 441937,California State University-Channel Islands,Ventura County,6111,CA,186.038466748769
 442569,Grantham University,Johnson County,20091,KS,208.07190270936
 443340,Williamson Christian College,Williamson County,47187,TN,224.007849753695
+443784,Strayer University-Pennsylvania,Bucks County,42017,PA,169.12225
 445188,University of California-Merced,Merced County,6047,CA,219.580194581281
 445267,Central Methodist University-College of Graduate and Extended Studies,Howard County,29089,MO,176.768035714286
 446048,Ave Maria University,Collier County,12021,FL,190.576939655172
@@ -855,7 +856,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 451927,Patrick Henry College,Loudoun County,51107,VA,142.189167487685
 454227,Chamberlain University-Illinois,DuPage County,17043,IL,196.794309113301
 456621,Strayer University-West Virginia,Putnam County,54079,WV,253.332410098522
-459259,South University-Richmond,Henrico County,51087,VA,168.29457635468
+458964,Strayer University-South Carolina,Greenville County,45045,SC,283.534075123153
 461795,North American University,Fort Bend County,48157,TX,194.139584975369
 474906,Stevens-Henager College,Bonneville County,16019,ID,222.83997044335
 476975,Colorado State University-Global Campus,Arapahoe County,8005,CO,197.137735221675
@@ -864,7 +865,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 482228,Veritas Baptist College,Dearborn County,18029,IN,232.754589901478
 482680,University of North Georgia,Lumpkin County,13187,GA,180.951298029557
 482699,South Georgia State College,Coffee County,13069,GA,219.288836206897
-484613,University of Phoenix-Arizona,Maricopa County,4013,AZ,244.661413793103
 485111,Georgia Military College,Baldwin County,13009,GA,181.637185960591
 486840,Kennesaw State University,Cobb County,13067,GA,197.09849137931
 486901,Milligan University,Carter County,47019,TN,251.114405172414

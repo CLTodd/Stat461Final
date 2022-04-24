@@ -43,9 +43,9 @@ vaxPolicies <-
          allStudents = ifelse(allStudents=="--",0,1),
          resStudentsOnly = ifelse(resStudentsOnly=="--",0,1),
          boosterRequired = ifelse(boosterRequired=="--",0,1)) %>%
+  # Our covid data is averageing over this time period so we're only intersted in this
+  filter(announceDate <= mdy("9/1/2021")) %>%
   select(-c(College))
-
-str(vaxPolicies$announceDate)
 
 # Not sure why the date for this school didn't parse correctly
 # The rest of the parsing 'errors' were missing values
