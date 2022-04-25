@@ -95,10 +95,10 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 133669,Florida Atlantic University,Palm Beach County,12099,FL,213.018413793103
 133711,Flagler College,St. Johns County,12109,FL,204.372785714286
 133881,Florida Institute of Technology,Brevard County,12009,FL,192.1596908867
-133951,Florida International University,Miami-Dade County,12086,FL,377.172171182266
 134097,Florida State University,Leon County,12073,FL,252.13453817734
 134130,University of Florida,Alachua County,12001,FL,219.275197044335
 134510,Hobe Sound Bible College,Martin County,12085,FL,163.800761083744
+135726,University of Miami,Miami-Dade County,12086,FL,377.172171182266
 136172,University of North Florida,Duval County,12031,FL,228.840407635468
 136215,Nova Southeastern University,Broward County,12011,FL,267.078959359606
 136774,Ringling College of Art and Design,Sarasota County,12115,FL,181.032272167488
@@ -153,6 +153,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 145691,Illinois College,Morgan County,17137,IL,240.996299261084
 145813,Illinois State University,McLean County,17113,IL,250.175519704434
 146427,Knox College,Knox County,17095,IL,215.719830049261
+146481,Lake Forest College,Lake County,17097,IL,185.614242610837
 146533,Lakeview College of Nursing,Vermilion County,17183,IL,316.73810591133
 146612,Lewis University,Will County,17197,IL,202.509665024631
 146676,Lincoln College,Logan County,17107,IL,284.781512315271
@@ -167,7 +168,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 148654,University of Illinois Springfield,Sangamon County,17167,IL,242.984167487685
 149222,Southern Illinois University-Carbondale,Jackson County,17077,IL,235.695825123153
 149231,Southern Illinois University-Edwardsville,Madison County,17119,IL,230.53138546798
-149514,Trinity International University-Illinois,Lake County,17097,IL,185.614242610837
 149772,Western Illinois University,McDonough County,17109,IL,205.988913793103
 150066,Anderson University,Madison County,18095,IN,217.151343596059
 150136,Ball State University,Delaware County,18035,IN,187.336504926108
@@ -178,6 +178,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 150756,Hanover College,Jefferson County,18077,IN,245.325748768473
 150941,Huntington University,Huntington County,18069,IN,268.49111453202
 151102,Purdue University Fort Wayne,Allen County,18003,IN,235.769706896552
+151111,Indiana University-Purdue University-Indianapolis,Marion County,18097,IN,201.003492610837
 151306,University of Southern Indiana,Vanderburgh County,18163,IN,272.006818965517
 151324,Indiana State University,Vigo County,18167,IN,231.982188423645
 151333,Indiana University-Kokomo,Howard County,18067,IN,265.181746305419
@@ -185,6 +186,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 151379,Indiana University-Southeast,Floyd County,18043,IN,207.365588669951
 151388,Indiana University-East,Wayne County,18177,IN,245.153963054187
 151777,Manchester University,Wabash County,18169,IN,239.690086206897
+151801,Indiana Wesleyan University-Marion,Grant County,18053,IN,226.38009729064
 151962,Mid-America College of Funeral Service,Clark County,18019,IN,226.336879310345
 152080,University of Notre Dame,St. Joseph County,18141,IN,223.937080049261
 152099,Oakland City University,Gibson County,18051,IN,296.189976600985
@@ -202,7 +204,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 153621,Iowa Wesleyan University,Henry County,19087,IA,233.449464285714
 153658,University of Iowa,Johnson County,19103,IA,194.159068965517
 153834,Luther College,Winneshiek County,19191,IA,159.55461453202
-153861,Maharishi International University,Jefferson County,19101,IA,155.793764778325
 154004,Morningside College,Woodbury County,19193,IA,240.370366995074
 154013,Mount Mercy University,Linn County,19113,IA,197.986492610837
 154095,University of Northern Iowa,Black Hawk County,19013,IA,214.943834975369
@@ -279,7 +280,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 162210,Washington Adventist University,Montgomery County,24031,MD,60.5181933497537
 162584,Frostburg State University,Allegany County,24001,MD,88.8929039408867
 162928,Johns Hopkins University,Baltimore City,24510,MD,79.520434729064
-163204,University of Maryland Global Campus,Prince George's County,24033,MD,84.3012426108374
+163286,University of Maryland-College Park,Prince George's County,24033,MD,84.3012426108374
 163338,University of Maryland Eastern Shore,Somerset County,24039,MD,88.7732278325123
 163462,Mount St. Mary's University,Frederick County,24021,MD,68.5245689655173
 163851,Salisbury University,Wicomico County,24045,MD,68.8596982758621
@@ -519,6 +520,7 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 202134,Cleveland State University,Cuyahoga County,39035,OH,187.533688423645
 202480,University of Dayton,Montgomery County,39113,OH,205.448849753695
 202514,Defiance College,Defiance County,39039,OH,228.624866995074
+202523,Denison University,Licking County,39089,OH,203.002599753695
 202763,The University of Findlay,Hancock County,39063,OH,193.136373152709
 203492,Kent State University at Salem,Columbiana County,39029,OH,206.065573891626
 203517,Kent State University at Kent,Portage County,39133,OH,181.057221674877
@@ -530,7 +532,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 204501,Oberlin College,Lorain County,39093,OH,185.040086206897
 204635,Ohio Northern University,Hardin County,39065,OH,190.224102216749
 204671,Ohio State University-Lima Campus,Allen County,39003,OH,230.949679802956
-204680,Ohio State University-Mansfield Campus,Richland County,39139,OH,224.109167487685
 204699,Ohio State University-Marion Campus,Marion County,39101,OH,262.106981527094
 204796,Ohio State University-Main Campus,Franklin County,39049,OH,189.151979064039
 204857,Ohio University-Main Campus,Athens County,39009,OH,190.387412561576
@@ -684,7 +685,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 225548,Howard Payne University,Brown County,48049,TX,264.27875
 225885,Jarvis Christian College,Wood County,48499,TX,149.88236453202
 226091,Lamar University,Jefferson County,48245,TX,160.65147044335
-226152,Texas A & M International University,Webb County,48479,TX,290.458001231527
 226231,LeTourneau University,Gregg County,48183,TX,161.048922413793
 226471,University of Mary Hardin-Baylor,Bell County,48027,TX,158.882626847291
 226833,Midwestern State University,Wichita County,48485,TX,199.989301724138
@@ -866,8 +866,6 @@ ipsedID,school,county,fipsCode,state,avgCasePerCapita
 486840,Kennesaw State University,Cobb County,13067,GA,197.09849137931
 486901,Milligan University,Carter County,47019,TN,251.114405172414
 487296,University of Arizona-Sierra Vista,Cochise County,4003,AZ,214.491800492611
-488679,Indiana Wesleyan University-National & Global,Grant County,18053,IN,226.38009729064
-489779,Purdue University Global,Marion County,18097,IN,201.003492610837
 490753,Maine Media College,Knox County,23013,ME,127.323681034483
 490805,Purdue University Northwest,Lake County,18089,IN,188.596060344828
 491525,Union Bible College,Hamilton County,18057,IN,208.683495073892

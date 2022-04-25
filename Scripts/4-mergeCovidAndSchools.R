@@ -51,7 +51,7 @@ mergedTrimmedSample <- mergedTrimmed[rows,]
 table(counties %in% mergedTrimmedSample$fipsCode)
 # Again, this was a problem but it was dealt with
 
-############### 4/23/22  ############3# 
+############### 4/23/22  ############# 
 # Merge the vaccine policy data with the covid data
 
 vaxPolicy <- readRDS("./Data/vaxPolicies")
@@ -79,13 +79,31 @@ vaxPolicyMatch <-
 mergedUnverified <- left_join(mergedTrimmedSample, vaxPolicyMatch,
                          by = c("vaxPolicySchoolnameCHECK"="school"))
 
+# For some reason there are repeats of identical rows
+nrow(mergedUnverified)
+repeatedIpsedIDS <- as.numeric(names(which(table(mergedUnverified$ipsedID)>1)))
+mergedUnverified[mergedUnverified$ipsedID %in% repeatedIpsedIDS,]
+# Going to just take the first instance of every row
+mergedUnverified <- data.table(
+  mergedUnverified %>%
+  group_by(ipsedID) %>%
+  slice(1)
+)
+
 setkey(mergedUnverified, ipsedID)
-fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
+
 
 # THIS IS VERY TENTATIVE MATCHING! Jordan and I need to manually confirm all of these,
 # and then fill in the missingness where necessary. Hopefully the listed URL's will help us
 # Not saving the RDS for this because its not confirmed to be correct, 
 # we'll update the spreadsheet as we do manual corrections
+
+# Making a flag variable so that we can mark whether or not the names were mismatched
+# We do know some need to be flagged because I manually checked them already,
+# but the rest do still need to be checked
+oldFlagged <- fread("./Data/temp.csv")$ipsedID
+mergedUnverified$flag <- ifelse(mergedUnverified$ipsedID %in% oldFlagged, 1, NA)
+fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 
 #########################################
 

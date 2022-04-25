@@ -180,19 +180,29 @@ resolvedMULTICOUNTY$C18SZSET[noPopIdx]
 # So, we'll just leave these values as missing and exclude them from comparisons
 # If I had more time I could do a lot more data wrangling and impute some of these missing values
 
+
+######## 4/24/22 ###########################
+# While verifying the data I noticed that the following schools made it into the sample that shouldn't have
+# because they are not in our desired population
+wrongSchools <- c("Ohio State University-Newark Campus", # not a 4-year, only do up to 3 years: https://newark.osu.edu/academics/degrees-at-newark/
+                  "Ohio State University-Mansfield Campus") # same
+wrongIPSEDID <- c(204705,
+                  204680)
+
+resolvedMULTICOUNTY <-
+  resolvedMULTICOUNTY %>%
+  # Filtering out schools that have "international" or "global" in them
+  # because they are likely online universities.
+  filter(!(UNITID%in%wrongIPSEDID) & !(grepl(pattern = "(global)|(international)",
+                                              x = INSTNM,
+                                              ignore.case=TRUE)))
+########################################
+
 resolvedMULTICOUNTY <-
   resolvedMULTICOUNTY %>%
   group_by(COUNTYFIPS) %>%
   slice_max(order_by=TOT_ENROLL)
 
-######## 4/24/22 ###########################
-# While verifying the data I noticed that the following schools made it into the sample that shouldn't have
-# because they are not in our desired population
-wrongSchools <- c("Ohio State University-Newark Campus") # not a year, only do up to 3 years: https://newark.osu.edu/academics/degrees-at-newark/
-wrongIPSEDID <- c(204705)
-resolvedMULTICOUNTY <- resolvedMULTICOUNTY[-which(204705 == resolvedMULTICOUNTY$UNITID),]
-
-########################################
   
 # Now we only have one school per county for  4-year institutions that enroll undergraduates full time
 saveRDS(resolvedMULTICOUNTY, "./Data/cleanSchools")
