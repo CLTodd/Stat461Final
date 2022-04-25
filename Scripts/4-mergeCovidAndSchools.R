@@ -99,10 +99,23 @@ setkey(mergedUnverified, ipsedID)
 # we'll update the spreadsheet as we do manual corrections
 
 # Making a flag variable so that we can mark whether or not the names were mismatched
-# We do know some need to be flagged because I manually checked them already,
-# but the rest do still need to be checked
-oldFlagged <- fread("./Data/temp.csv")$ipsedID
-mergedUnverified$flag <- ifelse(mergedUnverified$ipsedID %in% oldFlagged, 1, NA)
+# Making a mask variable for the future
+mergedUnverified$flag <- NA # will manually fill these in
+mergedUnverified$mask <- NA
+setcolorder(mergedUnverified, c('ipsedID',
+                                'county',
+                                'avgCasePerCapita',
+                                'fipsCode',
+                                'school',
+                                'state',
+                                'flag',
+                                'stateCHECK',
+                                'vaxPolicySchoolnameCHECK',
+                                'announceDateCHECK',
+                                'typeCHECK',
+                                'mask',
+                                'allStudentsCHECK',
+                                'urlCHECK'))
 fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 
 #########################################
