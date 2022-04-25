@@ -73,7 +73,7 @@ vaxPolicyMatch <-
   rename("announceDateCHECK" = "announceDate",
          "typeCHECK" = "type",
          "allStudentsCHECK" = "allStudents",
-         "urlCHECK" = "url",
+         "urlVaxCHECK" = "url",
          "stateCHECK"="State")
 
 mergedUnverified <- left_join(mergedTrimmedSample, vaxPolicyMatch,
@@ -102,6 +102,7 @@ setkey(mergedUnverified, ipsedID)
 # Making a mask variable for the future
 mergedUnverified$flag <- NA # will manually fill these in
 mergedUnverified$mask <- NA
+mergedUnverified$urlMaskCHECK <- NA
 setcolorder(mergedUnverified, c('ipsedID',
                                 'county',
                                 'avgCasePerCapita',
@@ -115,7 +116,8 @@ setcolorder(mergedUnverified, c('ipsedID',
                                 'typeCHECK',
                                 'mask',
                                 'allStudentsCHECK',
-                                'urlCHECK'))
+                                'urlVaxCHECK',
+                                'urlMaskCHECK'))
 fwrite(mergedUnverified, "./Data/mergedUnverified.csv")
 
 #########################################
