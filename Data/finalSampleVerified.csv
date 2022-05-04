@@ -1,0 +1,281 @@
+ipsedID,county,fipsCode,school,state,avgCasePerCapita,mask,vaccine
+100830,Montgomery County,1101,Auburn University at Montgomery,AL,208.4052069,1,0
+100858,Lee County,1081,Auburn University,AL,197.2058596,1,0
+101879,Lauderdale County,1077,University of North Alabama,AL,223.7464384,1,1
+102368,Pike County,1109,Troy University,AL,191.988665,1,0
+102377,Macon County,1087,Tuskegee University,AL,177.3199865,1,0
+102553,Anchorage Municipality,2020,University of Alaska Anchorage,AK,308.7216047,1,0
+104179,Pima County,4019,University of Arizona,AZ,208.6247303,1,0
+106245,Pulaski County,5119,University of Arkansas at Little Rock,AR,226.6153756,1,0
+106397,Washington County,5143,University of Arkansas,AR,246.2044889,1,0
+107558,Johnson County,5071,University of the Ozarks,AR,216.8308904,1,1
+107877,Lawrence County,5075,Williams Baptist University,AR,270.7918571,1,0
+110422,San Luis Obispo County,6079,California Polytechnic State University-San Luis Obispo,CA,171.6445468,1,1
+110486,Kern County,6029,California State University-Bakersfield,CA,227.7363756,1,1
+110495,Stanislaus County,6099,California State University-Stanislaus,CA,210.8018904,1,1
+110556,Fresno County,6019,California State University-Fresno,CA,218.9677931,1,1
+110680,San Diego County,6073,University of California-San Diego,CA,208.0180788,1,1
+115755,Humboldt County,6023,Humboldt State University,CA,126.2733571,1,1
+120184,San Mateo County,6081,Notre Dame de Namur University,CA,144.4356244,1,1
+123457,Shasta County,6089,Simpson University,CA,175.7887463,1,1
+123572,Sonoma County,6097,Sonoma State University,CA,150.0577365,1,1
+126562,Adams County,8001,University of Colorado Denver/Anschutz Medical Campus,CO,219.0341909,1,1
+126614,Boulder County,8013,University of Colorado Boulder,CO,167.0563288,1,1
+126669,Jefferson County,8059,Colorado Christian University,CO,180.322860837438,0,0
+128771,Hartford County,9003,Central Connecticut State University,CT,171.7209323,1,1
+128902,New London County,9011,Connecticut College,CT,178.6983522,1,1
+130697,Middlesex County,9007,Wesleyan University,CT,149.377516,1,1
+130794,New Haven County,9009,Yale University,CT,197.6579433,1,1
+130934,Kent County,10001,Delaware State University,DE,239.3891293,1,1
+130943,New Castle County,10003,University of Delaware,DE,226.2645271,1,1
+133669,Palm Beach County,12099,Florida Atlantic University,FL,213.0184138,1,0
+137032,Pasco County,12101,Saint Leo University,FL,190.6657709,1,0
+137351,Hillsborough County,12057,University of South Florida,FL,220.2466675,1,0
+138309,Marion County,12083,Rasmussen University-Florida,FL,196.8460961,1,0
+138354,Escambia County,12033,The University of West Florida,FL,220.8806712,1,0
+139199,Hall County,13139,Brenau University,GA,224.6441638,1,0
+139463,Whitfield County,13313,Dalton State College,GA,280.0068042,1,0
+139630,Franklin County,13119,Emmanuel College,GA,192.8701305,1,0
+139755,Fulton County,13121,Georgia Institute of Technology-Main Campus,GA,175.842383,1,0
+139764,Sumter County,13261,Georgia Southwestern State University,GA,195.6244335,1,0
+140447,Bibb County,13021,Mercer University,GA,208.5970899,1,0
+141264,Lowndes County,13185,Valdosta State University,GA,227.1285579,1,0
+141565,Hawaii County,15001,University of Hawaii at Hilo,HI,112.4583633,1,1
+142115,Ada County,16001,Boise State University,ID,239.4640567,1,0
+143288,Macoupin County,17117,Blackburn College,IL,243.7807167,1,1
+143358,Peoria County,17143,Bradley University,IL,223.7140111,1,1
+144892,Coles County,17029,Eastern Illinois University,IL,259.4938313,1,1
+145372,Bond County,17005,Greenville University,IL,221.3089889,1,1
+145600,Cook County,17031,University of Illinois Chicago,IL,189.8877685,1,1
+145813,McLean County,17113,Illinois State University,IL,250.1755197,1,1
+146481,Lake County,17097,Lake Forest College,IL,185.6142426,1,1
+146533,Vermilion County,17183,Lakeview College of Nursing,IL,316.7381059,1,1
+147244,Macon County,17115,Millikin University,IL,252.0208608,1,1
+147703,DeKalb County,17037,Northern Illinois University,IL,192.0356663,1,1
+148131,Adams County,17001,Quincy University,IL,293.3551034,1,1
+148405,Winnebago County,17201,Rockford University,IL,233.3591404,1,1
+149222,Jackson County,17077,Southern Illinois University-Carbondale,IL,235.6958251,1,1
+149231,Madison County,17119,Southern Illinois University-Edwardsville,IL,230.5313855,1,1
+150066,Madison County,18095,Anderson University,IN,217.1513436,1,0
+150604,Johnson County,18081,Franklin College,IN,230.2494323,1,0
+150677,Kosciusko County,18085,Grace College and Theological Seminary,IN,213.536415,1,1
+150941,Huntington County,18069,Huntington University,IN,268.4911145,1,1
+151111,Marion County,18097,Indiana University-Purdue University-Indianapolis,IN,201.0034926,1,1
+151324,Vigo County,18167,Indiana State University,IN,231.9821884,1,0
+151379,Floyd County,18043,Indiana University-Southeast,IN,207.3655887,1,1
+151777,Wabash County,18169,Manchester University,IN,239.6900862,1,0
+151801,Grant County,18053,Indiana Wesleyan University-Marion,IN,226.3800973,1,0
+152080,St. Joseph County,18141,University of Notre Dame,IN,223.93708,1,1
+152099,Gibson County,18051,Oakland City University,IN,296.1899766,1,1
+153108,Marion County,19125,Central College,IA,194.1600394,1,0
+153250,Sioux County,19167,Dordt University,IA,195.6486786,1,0
+153603,Story County,19169,Iowa State University,IA,174.962936,1,0
+154004,Woodbury County,19193,Morningside College,IA,240.370366995074,0,0
+154350,Warren County,19181,Simpson College,IA,208.0765185,1,0
+154590,Mahaska County,19123,William Penn University,IA,186.158734,1,0
+154749,Harvey County,20079,Bethel College-North Newton,KS,238.7221749,1,0
+155025,Lyon County,20111,Emporia State University,KS,256.6192401,1,0
+156082,Shawnee County,20177,Washburn University,KS,234.6261761,1,0
+156213,Jessamine County,21113,Asbury University,KY,240.0038374,1,0
+156745,Scott County,21209,Georgetown College,KY,254.8088424,1,0
+157216,Adair County,21001,Lindsey Wilson College,KY,260.8833781,1,0
+157447,Campbell County,21037,Northern Kentucky University,KY,210.7639951,1,0
+157535,Pike County,21195,University of Pikeville,KY,281.0258953,1,0
+159647,Lincoln Parish,22061,Louisiana Tech University,LA,211.0948485,1,1
+159993,Ouachita Parish,22073,University of Louisiana at Monroe,LA,266.1668337,1,1
+160409,St. Tammany Parish,22103,Saint Joseph Seminary College,LA,225.8420308,1,1
+161217,Kennebec County,23011,University of Maine at Augusta,ME,161.9265259,1,1
+161226,Franklin County,23007,University of Maine at Farmington,ME,159.6511687,1,1
+161299,Hancock County,23009,Maine Maritime Academy,ME,114.565835,1,1
+161554,Cumberland County,23005,University of Southern Maine,ME,141.8195308,1,1
+162584,Allegany County,24001,Frostburg State University,MD,88.89290394,1,1
+163462,Frederick County,24021,Mount St. Mary's University,MD,68.52456897,1,1
+163912,St. Mary's County,24037,St. Mary's College of Maryland,MD,49.52364901,1,1
+164580,Norfolk County,25021,Babson College,MA,161.4110209,1,1
+165024,Plymouth County,25023,Bridgewater State University,MA,191.3214261,1,1
+165820,Worcester County,25027,Fitchburg State University,MA,199.9182722,1,1
+166629,Hampshire County,25015,University of Massachusetts-Amherst,MA,149.2289581,1,1
+167729,Essex County,25009,Salem State University,MA,224.5130074,1,1
+167987,Bristol County,25005,University of Massachusetts-Dartmouth,MA,228.8996232,1,1
+168263,Hampden County,25013,Westfield State University,MA,246.0846515,1,1
+168847,Shiawassee County,26155,Baker College,MI,223.8883818,1,0
+169479,Kent County,26081,Davenport University,MI,218.3523485,1,0
+169910,Mecosta County,26107,Ferris State University,MI,169.0547525,1,0
+170286,Hillsdale County,26059,Hillsdale College,MI,193.9307796,1,0
+170976,Washtenaw County,26161,University of Michigan-Ann Arbor,MI,176.70558,1,1
+171128,Houghton County,26061,Michigan Technological University,MI,186.1130025,1,1
+171492,Midland County,26111,Northwood University,MI,196.486593596059,0,0
+172264,Lenawee County,26091,Siena Heights University,MI,213.8282057,1,0
+172334,Jackson County,26075,Spring Arbor University,MI,213.8410172,1,0
+173957,Olmsted County,27109,Mayo Clinic College of Medicine and Science,MN,223.5806933,1,1
+174251,Stevens County,27149,University of Minnesota-Morris,MN,220.3183719,1,1
+174783,Stearns County,27145,Saint Cloud State University,MN,271.496383,1,0
+175616,Bolivar County,28011,Delta State University,MS,258.251601,1,0
+176017,Lafayette County,28071,University of Mississippi,MS,242.3658805,1,0
+176336,Jones County,28067,Southeastern Baptist College,MS,267.5711256,1,0
+176372,Forrest County,28035,University of Southern Mississippi,MS,252.8300172,1,0
+176406,Madison County,28089,Tougaloo College,MS,194.5977845,1,1
+177144,Lewis County,29111,Culver-Stockton College,MO,230.5963966,1,1
+178341,Jasper County,29097,Missouri Southern State University,MO,245.6040246,1,0
+178402,Jackson County,29095,University of Missouri-Kansas City,MO,256.9240788,1,1
+178411,Phelps County,29161,Missouri University of Science and Technology,MO,196.2215283,1,0
+179326,Polk County,29167,Southwest Baptist University,MO,214.2004458,1,0
+180647,Lake County,30047,Salish Kootenai College,MT,183.6292783,1,0
+180692,Beaverhead County,30001,The University of Montana-Western,MT,180.4494101,1,0
+181020,Saline County,31151,Doane University,NE,119.6635062,1,1
+182306,Elko County,32007,Great Basin College,NV,189.2161933,1,0
+183026,Merrimack County,33013,Southern New Hampshire University,NH,182.6404667,1,1
+183044,Strafford County,33017,University of New Hampshire-Main Campus,NH,192.1988892,1,0
+183804,Ocean County,34029,Beth Medrash Govoha,NJ,230.6377734,1,0
+183974,Warren County,34041,Centenary University,NJ,196.082431,1,1
+184603,Bergen County,34003,Fairleigh Dickinson University-Metropolitan Campus,NJ,208.1642291,1,1
+184782,Gloucester County,34015,Rowan University,NJ,206.3144544,1,1
+185572,Monmouth County,34025,Monmouth University,NJ,229.301133,1,1
+185590,Passaic County,34031,Montclair State University,NJ,249.1592943,1,1
+186371,Camden County,34007,Rutgers University-Camden,NJ,214.1316601,1,1
+187596,McKinley County,35031,Navajo Technical University,NM,311.5737365,1,1
+187985,Bernalillo County,35001,University of New Mexico-Main Campus,NM,186.4524224,1,1
+188182,Lea County,35025,University of the Southwest,NM,231.9592722,1,0
+188304,Grant County,35017,Western New Mexico University,NM,208.4354754,1,0
+190099,Madison County,36053,Colgate University,NY,160.7767574,1,1
+190549,Kings County,36047,CUNY Brooklyn College,NY,235.6475911,1,1
+190983,Chemung County,36015,Elmira College,NY,220.3839754,1,1
+191630,Ontario County,36069,Hobart William Smith Colleges,NY,157.3790431,1,1
+192192,Yates County,36123,Keuka College,NY,114.1163424,1,0
+192448,Nassau County,36059,Long Island University,NY,257.5188682,1,1
+194824,Rensselaer County,36083,Rensselaer Polytechnic Institute,NY,171.4115813,1,1
+195164,Cattaraugus County,36009,St Bonaventure University,NY,173.845984,1,1
+195809,Queens County,36081,St. John's University-New York,NY,245.9004236,1,1
+196060,Albany County,36001,SUNY at Albany,NY,167.3707204,1,1
+196097,Suffolk County,36103,Stony Brook University,NY,249.7245296,1,1
+196246,Clinton County,36019,SUNY College at Plattsburgh,NY,179.3682426,1,1
+196413,Onondaga County,36067,Syracuse University,NY,213.7870628,1,1
+197911,Wilson County,37195,Barton College,NC,227.7664975,1,0
+197984,Gaston County,37071,Belmont Abbey College,NC,249.9775924,1,0
+198215,Rowan County,37159,Catawba College,NC,249.3441761,1,0
+198303,Hertford County,37091,Chowan University,NC,168.1913571,1,0
+198464,Pitt County,37147,East Carolina University,NC,249.4847081,1,0
+198808,Avery County,37011,Lees-McRae College,NC,221.5794729,1,1
+198835,Catawba County,37035,Lenoir-Rhyne University,NC,256.7449618,1,1
+199111,Buncombe County,37021,University of North Carolina at Asheville,NC,172.52583,1,0
+199120,Orange County,37135,University of North Carolina at Chapel Hill,NC,152.038149,1,0
+199148,Guilford County,37081,University of North Carolina at Greensboro,NC,187.5806022,1,0
+199193,Wake County,37183,North Carolina State University at Raleigh,NC,225.0493522,1,0
+199218,New Hanover County,37129,University of North Carolina Wilmington,NC,185.588101,1,0
+199306,Stanly County,37167,Pfeiffer University,NC,265.6550283,1,0
+200004,Jackson County,37099,Western Carolina University,NC,182.8287131,1,0
+200156,Stutsman County,38093,University of Jamestown,ND,288.4191133,1,1
+200484,Dickey County,38021,Trinity Bible College and Graduate School,ND,236.0174089,1,0
+201441,Wood County,39173,Bowling Green State University-Main Campus,OH,207.15775,1,1
+204501,Lorain County,39093,Oberlin College,OH,185.0400862,1,1
+204635,Hardin County,39065,Ohio Northern University,OH,190.2241022,1,0
+206604,Greene County,39057,Wright State University-Main Campus,OH,191.2254261,1,0
+206695,Mahoning County,39099,Youngstown State University,OH,201.1518017,1,0
+206817,Muskogee County,40101,Bacone College,OK,252.1952672,1,0
+207209,Logan County,40083,Langston University,OK,193.030988916256,0,0
+207388,Payne County,40119,Oklahoma State University-Main Campus,OK,191.8531281,1,1
+207403,Pottawatomie County,40125,Oklahoma Baptist University,OK,243.870952,1,0
+207500,Cleveland County,40027,University of Oklahoma-Norman Campus,OK,240.1936256,1,0
+207661,Rogers County,40131,Rogers State University,OK,236.4075234,1,0
+207971,Tulsa County,40143,University of Tulsa,OK,225.541617,1,0
+208646,Union County,41061,Eastern Oregon University,OR,157.3839692,1,1
+209506,Klamath County,41035,Oregon Institute of Technology,OR,177.5371367,1,1
+209551,Lane County,41039,University of Oregon,OR,129.3598534,1,1
+210429,Polk County,41053,Western Oregon University,OR,152.4541367,1,1
+210669,Crawford County,42039,Allegheny College,PA,200.742883,1,1
+210739,Lehigh County,42077,DeSales University,PA,208.8448855,1,0
+211088,Montgomery County,42091,Arcadia University,PA,158.3791663,1,1
+211291,Union County,42119,Bucknell University,PA,222.1452919,1,1
+212674,Adams County,42001,Gettysburg College,PA,207.0757377,1,1
+213251,Huntingdon County,42061,Juniata College,PA,217.956053,1,0
+213303,Wyoming County,42131,Keystone College,PA,159.2426933,1,0
+215266,McKean County,42083,University of Pittsburgh-Bradford,PA,171.7893165,1,1
+215947,Westmoreland County,42129,Seton Hill University,PA,196.91183,1,1
+216038,Butler County,42019,Slippery Rock University of Pennsylvania,PA,203.8212057,1,0
+216597,Delaware County,42045,Villanova University,PA,167.4481564,1,1
+217156,Providence County,44007,Brown University,RI,298.1854852,1,1
+217536,Newport County,44005,Salve Regina University,RI,209.4910419,1,1
+217907,Darlington County,45031,Coker University,SC,243.5990086,1,0
+218229,Greenwood County,45047,Lander University,SC,273.6243867,1,1
+218414,Newberry County,45071,Newberry College,SC,295.6882525,1,1
+218654,Beaufort County,45013,University of South Carolina Beaufort,SC,192.939181,1,1
+218663,Richland County,45079,University of South Carolina-Columbia,SC,253.418048,1,1
+218724,Horry County,45051,Coastal Carolina University,SC,234.4798904,1,0
+218733,Orangeburg County,45075,South Carolina State University,SC,232.4917278,1,0
+219000,Minnehaha County,46099,Augustana University,SD,254.4820431,1,1
+219198,Yankton County,46135,Mount Marty University,SD,218.6454569,1,0
+219277,Oglala Lakota County,46102,Oglala Lakota College,SD,227.1770899,1,1
+219374,Todd County,46121,Sinte Gleska University,SD,239.7103103,1,1
+219718,Carroll County,47017,Bethel University,TN,274.8770985,1,0
+219806,Jefferson County,47089,Carson-Newman University,TN,247.4692697,1,0
+219949,Wilson County,47189,Cumberland University,TN,248.0302291,1,0
+220631,Claiborne County,47025,Lincoln Memorial University,TN,243.4229766,1,0
+220701,Giles County,47055,Martin Methodist College,TN,272.8135234,1,1
+220862,Shelby County,47157,University of Memphis,TN,216.5315259,1,0
+220978,Rutherford County,47149,Middle Tennessee State University,TN,248.1129384,1,0
+221731,McMinn County,47107,Tennessee Wesleyan University,TN,266.2707451,1,0
+221953,Greene County,47059,Tusculum University,TN,274.4916946,1,0
+221999,Davidson County,47037,Vanderbilt University,TN,237.6884803,1,1
+225885,Wood County,48499,Jarvis Christian College,TX,149.8823645,1,0
+226091,Jefferson County,48245,Lamar University,TX,160.6514704,1,0
+226471,Bell County,48027,University of Mary Hardin-Baylor,TX,158.8826268,1,0
+227881,Walker County,48471,Sam Houston State University,TX,217.2568239,1,0
+228325,Ellis County,48139,Southwestern Assemblies of God University,TX,227.3860308,1,0
+228459,Hays County,48209,Texas State University,TX,224.9652451,1,0
+228468,Johnson County,48251,Southwestern Adventist University,TX,211.8757204,1,0
+228529,Erath County,48143,Tarleton State University,TX,173.6447894,1,0
+228653,Galveston County,48167,The University of Texas Medical Branch at Galveston,TX,240.9187562,1,1
+229018,Ector County,48135,The University of Texas Permian Basin,TX,193.9942204,1,0
+229027,Bexar County,48029,The University of Texas at San Antonio,TX,239.6673227,1,0
+229780,Hale County,48189,Wayland Baptist University,TX,167.4428571,1,0
+230737,Utah County,49049,Utah Valley University,UT,273.1187722,1,1
+230913,Lamoille County,50015,Northern Vermont University,VT,128.0279335,1,1
+231165,Orange County,50017,Vermont Technical College,VT,142.3809212,1,0
+231420,Danville City,51590,Averett University,VA,235.6090419,1,1
+231581,Rockingham County,51165,Bridgewater College,VA,151.6716195,1,1
+231624,Williamsburg City,51830,William & Mary,VA,90.41684236,1,1
+232025,Washington County,51191,Emory & Henry College,VA,219.0738818,1,1
+232265,Hampton City,51650,Hampton University,VA,176.8744261,1,1
+232308,Roanoke County,51161,Hollins University,VA,192.5272845,1,1
+232982,Norfolk City,51710,Old Dominion University,VA,149.7495037,1,1
+233277,Radford City,51750,Radford University,VA,228.4220099,1,1
+233356,Henrico County,51087,Bon Secours Memorial College of Nursing,VA,168.2945764,1,0
+233541,Winchester City,51840,Shenandoah University,VA,190.5669655,1,0
+233684,Arlington County,51013,Strayer University-Virginia,VA,152.6936946,1,0
+233897,Wise County,51195,The University of Virginia's College at Wise,VA,234.9168067,1,0
+233921,Montgomery County,51121,Virginia Polytechnic Institute and State University,VA,162.6613214,1,1
+234076,Albemarle County,51003,University of Virginia-Main Campus,VA,135.8678633,1,0
+234207,Lexington City,51678,Washington and Lee University,VA,313.4555406,1,1
+234827,Kittitas County,53037,Central Washington University,WA,149.982452,1,1
+235097,Spokane County,53063,Eastern Washington University,WA,204.416117,1,1
+235167,Thurston County,53067,The Evergreen State College,WA,138.9329495,1,1
+236896,Walla Walla County,53071,Walla Walla University,WA,214.4065172,1,0
+237118,Barbour County,54001,Alderson Broaddus University,WV,246.1031823,1,0
+237330,Mercer County,54055,Concord University,WV,248.6381995,1,0
+237686,Wood County,54107,West Virginia University at Parkersburg,WV,228.1550172,1,0
+237783,Harrison County,54033,Salem University,WV,253.567564,1,1
+237899,Kanawha County,54039,West Virginia State University,WV,227.9283522,1,0
+237932,Ohio County,54069,West Liberty University,WV,227.9385419,1,0
+238032,Monongalia County,54061,West Virginia University,WV,200.527197,1,0
+238616,Ozaukee County,55089,Concordia University-Wisconsin,WI,214.0503214,1,0
+239071,Jefferson County,55055,Maranatha Baptist University,WI,217.6125468,1,0
+240189,Walworth County,55127,University of Wisconsin-Whitewater,WI,221.4408276,1,0
+240417,Dunn County,55033,University of Wisconsin-Stout,WI,250.8604224,1,0
+240471,Pierce County,55093,University of Wisconsin-River Falls,WI,230.9523793,1,0
+240727,Albany County,56001,University of Wyoming,WY,217.6457512,1,0
+241304,Caguas Municipio,72025,Columbia Central University-Caguas,PR,139.5937057,1,1
+241410,Ponce Municipio,72113,Pontifical Catholic University of Puerto Rico-Ponce,PR,110.1595788,1,1
+241614,Trujillo Alto Municipio,72139,Universidad Teologica del Caribe,PR,122.7077365,1,1
+242617,San Germán Municipio,72125,Inter American University of Puerto Rico-San German,PR,88.350383,1,1
+243188,Utuado Municipio,72141,University of Puerto Rico-Utuado,PR,94.38636453,1,1
+243197,Mayagüez Municipio,72097,University of Puerto Rico-Mayaguez,PR,108.9245874,1,1
+260813,Arapahoe County,8005,Platt College-Aurora,CO,197.1377352,1,1
+433536,Jefferson Parish,22051,Herzing University-New Orleans,LA,216.0996305,1,0
+433660,Lee County,12071,Florida Gulf Coast University,FL,214.283803,1,1
+438498,Alexandria City,51510,Stratford University,VA,164.6055603,1,0
+441937,Ventura County,6111,California State University-Channel Islands,CA,186.0384667,1,1
+446048,Collier County,12021,Ave Maria University,FL,190.5769397,1,0
+482680,Lumpkin County,13187,University of North Georgia,GA,180.951298,1,0
+485111,Baldwin County,13009,Georgia Military College,GA,181.637186,1,0
+490753,Knox County,23013,Maine Media College,ME,127.323681,1,1
+492476,Villalba Municipio,72149,EDP University of Puerto Rico-Villalba,PR,107.1103165,1,1
