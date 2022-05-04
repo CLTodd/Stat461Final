@@ -1,0 +1,76 @@
+---
+title: "Community Impacts of College Covid Policies"
+author: "Jordan Striebig and Candace Todd"
+date: "May 5, 2022"
+output: pdf_document
+geometry: left=1in,right=1in,top=1in,bottom=1in
+urlcolor: blue
+header-includes: \usepackage{subfig}
+---
+
+```{r setup, include=FALSE}
+# Clear workspace
+rm(list=ls())
+
+# Setting Document Options
+knitr::opts_chunk$set(
+  echo = FALSE,
+  warning = FALSE,
+  message = FALSE,
+  fig.align = "center"
+)
+
+# Load Packages
+packages <- c(
+  "tidyverse", "knitr", "kableExtra", "hasseDiagram",
+  "psych", "car", "parameters", "ggpubr", "data.table"
+  ) 
+lapply(X = packages, FUN = library, character.only = TRUE)
+
+# Loading Helper Files
+source("https://raw.github.com/neilhatfield/STAT461/master/rScripts/ANOVATools.R")
+source("https://raw.github.com/neilhatfield/STAT461/master/rScripts/shadowgram.R")
+
+
+# Setting Global Options
+options("contrasts" = c("contr.sum", "contr.poly"))
+options(knitr.kable.NA = "")
+```
+
+# Introduction
+
+
+# Study Design & Methods
+
+
+# Exploration of the Data
+
+```{r}
+# Load in the data
+covidRaw <-
+  readRDS("../Data/finalSampleVerified")
+
+covidRaw$mask <- factor(covidRaw$mask,
+                        levels=c(0,1),
+                        labels=c("No Mask Req","Mask Req"))
+
+covidRaw$vaccine <- factor(covidRaw$vaccine,
+                           levels=c(0,1),
+                           labels=c("No Vax Req","Vax Req"))
+
+# This drastic imbalance is what led us to decide to 
+# reduce the scope of our study
+table(covidRaw$vaccine, covidRaw$mask)
+
+# Select only the variables we need for One-Way ANOVA
+covid <- covidRaw[,c("avgCasePerCapita","vaccine", "")]
+
+
+```
+
+
+# Results
+
+
+# Discussion & Limitations
+

@@ -27,9 +27,20 @@ sampleMostlyVerified <-
                                  header=TRUE)
   )
 
-setnames(sampleMostlyVerified, "allStudentsCHECK", "vaccine")
+# Rename these variables
+setnames(sampleMostlyVerified, 
+         c("allStudentsCHECK", "typeCHECK"), 
+         c("vaccine",          "private"))
 
-setorder(sampleMostlyVerified, ipsedID)
+# Fixing a typo 
+sampleMostlyVerified$private <- 
+  ifelse(grepl(x=sampleMostlyVerified$private, 
+               pattern=".*Private.*"),
+         "Private",
+         "Public")
+
+# setting Indexes in the data
+setkey(sampleMostlyVerified, ipsedID)
 
 # Save these so we don't pick the same schools again
 chosenIPSED <- sampleMostlyVerified$ipsedID
@@ -37,9 +48,9 @@ chosenIPSED <- sampleMostlyVerified$ipsedID
 # Remove the closed schools
 sampleVerifiedOnly <- 
   sampleMostlyVerified %>%
-  filter(!(ipsedID%in%closedSchools)) %>%
-  select(ipsedID, county, fipsCode, school, state, # identifying attributes
-         avgCasePerCapita, mask, vaccine) # attributes we're interested in
+  dplyr::filter(!(ipsedID%in%closedSchools)) %>%
+  dplyr::select(c(ipsedID, county, fipsCode, school, state, # identifying attributes
+         avgCasePerCapita, mask, vaccine, private)) # attributes we're interested in
   
 # Randomly sample 4 new schools
 mergedTrimmed <- readRDS("./Data/mergedTrimmed")
@@ -47,7 +58,7 @@ mergedTrimmedNew <- mergedTrimmed[!(mergedTrimmed$ipsedID %in% chosenIPSED),]
 set.seed(461)
 rows <- sample(1:nrow(mergedTrimmedNew), size=4, replace=FALSE)
 newSchools <- mergedTrimmedNew[rows,]
-setorder(newSchools, ipsedID)
+setkey(newSchools, ipsedID)
 # None of these schools had information in the vaccine policy data,
 # I manually looked the information up.
 mergedTrimmed[mergedTrimmed$school%in%newSchools$school,]
@@ -59,9 +70,10 @@ mergedTrimmed[mergedTrimmed$school%in%newSchools$school,]
 #          students at the school by Sept. 1, 2021
 newSchools$mask <- c(0,0,0,0)
 newSchools$vaccine <- c(0,0,0,0)
+newSchools$private <- c("Private", "Private", "Private", "Public")
 
 # URLs from which I got the above info, in order of those vectors. Just for safekeeping
-#urlMask <- 
+#urlPolicies <- 
 #  c("https://web.archive.org/web/20210828122534/https://www.ccu.edu/ccu-cares/",
 #    # Even though this is recorded as Morningside "college" in the data set 
 #    # I'm assuming that is an error because there is a Morningside "University" in the exact same county
