@@ -1,0 +1,141 @@
+ipsedID,county,fipsCode,school,state,avgCasePerCapita,mask,Policy,Type
+100830,Montgomery County,1101,Auburn University at Montgomery,AL,208.4052069,Mask Req,Not Required,Public
+102553,Anchorage Municipality,2020,University of Alaska Anchorage,AK,308.7216047,Mask Req,Not Required,Public
+106245,Pulaski County,5119,University of Arkansas at Little Rock,AR,226.6153756,Mask Req,Not Required,Public
+106397,Washington County,5143,University of Arkansas,AR,246.2044889,Mask Req,Not Required,Public
+110422,San Luis Obispo County,6079,California Polytechnic State University-San Luis Obispo,CA,171.6445468,Mask Req,Required,Public
+120184,San Mateo County,6081,Notre Dame de Namur University,CA,144.4356244,Mask Req,Required,Private
+126562,Adams County,8001,University of Colorado Denver/Anschutz Medical Campus,CO,219.0341909,Mask Req,Required,Public
+126614,Boulder County,8013,University of Colorado Boulder,CO,167.0563288,Mask Req,Required,Public
+126669,Jefferson County,8059,Colorado Christian University,CO,180.322860837438,No Mask Req,Not Required,Private
+128902,New London County,9011,Connecticut College,CT,178.6983522,Mask Req,Required,Private
+130794,New Haven County,9009,Yale University,CT,197.6579433,Mask Req,Required,Private
+130943,New Castle County,10003,University of Delaware,DE,226.2645271,Mask Req,Required,Public
+133669,Palm Beach County,12099,Florida Atlantic University,FL,213.0184138,Mask Req,Not Required,Public
+138354,Escambia County,12033,The University of West Florida,FL,220.8806712,Mask Req,Not Required,Public
+139463,Whitfield County,13313,Dalton State College,GA,280.0068042,Mask Req,Not Required,Public
+139630,Franklin County,13119,Emmanuel College,GA,192.8701305,Mask Req,Not Required,Private
+139755,Fulton County,13121,Georgia Institute of Technology-Main Campus,GA,175.842383,Mask Req,Not Required,Public
+139764,Sumter County,13261,Georgia Southwestern State University,GA,195.6244335,Mask Req,Not Required,Public
+140447,Bibb County,13021,Mercer University,GA,208.5970899,Mask Req,Not Required,Private
+141264,Lowndes County,13185,Valdosta State University,GA,227.1285579,Mask Req,Not Required,Public
+143288,Macoupin County,17117,Blackburn College,IL,243.7807167,Mask Req,Required,Private
+143358,Peoria County,17143,Bradley University,IL,223.7140111,Mask Req,Required,Private
+144892,Coles County,17029,Eastern Illinois University,IL,259.4938313,Mask Req,Required,Public
+145813,McLean County,17113,Illinois State University,IL,250.1755197,Mask Req,Required,Public
+148131,Adams County,17001,Quincy University,IL,293.3551034,Mask Req,Required,Private
+148405,Winnebago County,17201,Rockford University,IL,233.3591404,Mask Req,Required,Private
+149231,Madison County,17119,Southern Illinois University-Edwardsville,IL,230.5313855,Mask Req,Required,Public
+150066,Madison County,18095,Anderson University,IN,217.1513436,Mask Req,Not Required,Private
+150677,Kosciusko County,18085,Grace College and Theological Seminary,IN,213.536415,Mask Req,Required,Private
+150941,Huntington County,18069,Huntington University,IN,268.4911145,Mask Req,Required,Private
+151111,Marion County,18097,Indiana University-Purdue University-Indianapolis,IN,201.0034926,Mask Req,Required,Public
+151324,Vigo County,18167,Indiana State University,IN,231.9821884,Mask Req,Not Required,Public
+151777,Wabash County,18169,Manchester University,IN,239.6900862,Mask Req,Not Required,Private
+153108,Marion County,19125,Central College,IA,194.1600394,Mask Req,Not Required,Private
+153250,Sioux County,19167,Dordt University,IA,195.6486786,Mask Req,Not Required,Private
+153603,Story County,19169,Iowa State University,IA,174.962936,Mask Req,Not Required,Public
+154350,Warren County,19181,Simpson College,IA,208.0765185,Mask Req,Not Required,Private
+154749,Harvey County,20079,Bethel College-North Newton,KS,238.7221749,Mask Req,Not Required,Private
+155025,Lyon County,20111,Emporia State University,KS,256.6192401,Mask Req,Not Required,Public
+156745,Scott County,21209,Georgetown College,KY,254.8088424,Mask Req,Not Required,Private
+157216,Adair County,21001,Lindsey Wilson College,KY,260.8833781,Mask Req,Not Required,Private
+157447,Campbell County,21037,Northern Kentucky University,KY,210.7639951,Mask Req,Not Required,Public
+160409,St. Tammany Parish,22103,Saint Joseph Seminary College,LA,225.8420308,Mask Req,Required,Private
+161226,Franklin County,23007,University of Maine at Farmington,ME,159.6511687,Mask Req,Required,Public
+161554,Cumberland County,23005,University of Southern Maine,ME,141.8195308,Mask Req,Required,Public
+163462,Frederick County,24021,Mount St. Mary's University,MD,68.52456897,Mask Req,Required,Private
+163912,St. Mary's County,24037,St. Mary's College of Maryland,MD,49.52364901,Mask Req,Required,Public
+164580,Norfolk County,25021,Babson College,MA,161.4110209,Mask Req,Required,Private
+165024,Plymouth County,25023,Bridgewater State University,MA,191.3214261,Mask Req,Required,Public
+167729,Essex County,25009,Salem State University,MA,224.5130074,Mask Req,Required,Public
+167987,Bristol County,25005,University of Massachusetts-Dartmouth,MA,228.8996232,Mask Req,Required,Public
+168263,Hampden County,25013,Westfield State University,MA,246.0846515,Mask Req,Required,Public
+171492,Midland County,26111,Northwood University,MI,196.486593596059,No Mask Req,Not Required,Private
+173957,Olmsted County,27109,Mayo Clinic College of Medicine and Science,MN,223.5806933,Mask Req,Required,Private
+175616,Bolivar County,28011,Delta State University,MS,258.251601,Mask Req,Not Required,Public
+176372,Forrest County,28035,University of Southern Mississippi,MS,252.8300172,Mask Req,Not Required,Public
+176406,Madison County,28089,Tougaloo College,MS,194.5977845,Mask Req,Required,Private
+177144,Lewis County,29111,Culver-Stockton College,MO,230.5963966,Mask Req,Required,Private
+178411,Phelps County,29161,Missouri University of Science and Technology,MO,196.2215283,Mask Req,Not Required,Public
+180692,Beaverhead County,30001,The University of Montana-Western,MT,180.4494101,Mask Req,Not Required,Public
+183044,Strafford County,33017,University of New Hampshire-Main Campus,NH,192.1988892,Mask Req,Not Required,Public
+184603,Bergen County,34003,Fairleigh Dickinson University-Metropolitan Campus,NJ,208.1642291,Mask Req,Required,Private
+184782,Gloucester County,34015,Rowan University,NJ,206.3144544,Mask Req,Required,Public
+187596,McKinley County,35031,Navajo Technical University,NM,311.5737365,Mask Req,Required,Public
+187985,Bernalillo County,35001,University of New Mexico-Main Campus,NM,186.4524224,Mask Req,Required,Public
+188304,Grant County,35017,Western New Mexico University,NM,208.4354754,Mask Req,Not Required,Public
+190099,Madison County,36053,Colgate University,NY,160.7767574,Mask Req,Required,Private
+190549,Kings County,36047,CUNY Brooklyn College,NY,235.6475911,Mask Req,Required,Public
+195164,Cattaraugus County,36009,St Bonaventure University,NY,173.845984,Mask Req,Required,Private
+196097,Suffolk County,36103,Stony Brook University,NY,249.7245296,Mask Req,Required,Public
+197911,Wilson County,37195,Barton College,NC,227.7664975,Mask Req,Not Required,Private
+198215,Rowan County,37159,Catawba College,NC,249.3441761,Mask Req,Not Required,Private
+198808,Avery County,37011,Lees-McRae College,NC,221.5794729,Mask Req,Required,Private
+199111,Buncombe County,37021,University of North Carolina at Asheville,NC,172.52583,Mask Req,Not Required,Public
+199120,Orange County,37135,University of North Carolina at Chapel Hill,NC,152.038149,Mask Req,Not Required,Public
+199148,Guilford County,37081,University of North Carolina at Greensboro,NC,187.5806022,Mask Req,Not Required,Public
+199193,Wake County,37183,North Carolina State University at Raleigh,NC,225.0493522,Mask Req,Not Required,Public
+199218,New Hanover County,37129,University of North Carolina Wilmington,NC,185.588101,Mask Req,Not Required,Public
+199306,Stanly County,37167,Pfeiffer University,NC,265.6550283,Mask Req,Not Required,Private
+200004,Jackson County,37099,Western Carolina University,NC,182.8287131,Mask Req,Not Required,Public
+200156,Stutsman County,38093,University of Jamestown,ND,288.4191133,Mask Req,Required,Private
+204501,Lorain County,39093,Oberlin College,OH,185.0400862,Mask Req,Required,Private
+204635,Hardin County,39065,Ohio Northern University,OH,190.2241022,Mask Req,Not Required,Private
+206604,Greene County,39057,Wright State University-Main Campus,OH,191.2254261,Mask Req,Not Required,Public
+206817,Muskogee County,40101,Bacone College,OK,252.1952672,Mask Req,Not Required,Private
+207500,Cleveland County,40027,University of Oklahoma-Norman Campus,OK,240.1936256,Mask Req,Not Required,Public
+207661,Rogers County,40131,Rogers State University,OK,236.4075234,Mask Req,Not Required,Public
+210429,Polk County,41053,Western Oregon University,OR,152.4541367,Mask Req,Required,Public
+211291,Union County,42119,Bucknell University,PA,222.1452919,Mask Req,Required,Private
+212674,Adams County,42001,Gettysburg College,PA,207.0757377,Mask Req,Required,Private
+213251,Huntingdon County,42061,Juniata College,PA,217.956053,Mask Req,Not Required,Private
+213303,Wyoming County,42131,Keystone College,PA,159.2426933,Mask Req,Not Required,Private
+215947,Westmoreland County,42129,Seton Hill University,PA,196.91183,Mask Req,Required,Private
+216038,Butler County,42019,Slippery Rock University of Pennsylvania,PA,203.8212057,Mask Req,Not Required,Public
+217156,Providence County,44007,Brown University,RI,298.1854852,Mask Req,Required,Private
+217536,Newport County,44005,Salve Regina University,RI,209.4910419,Mask Req,Required,Private
+218229,Greenwood County,45047,Lander University,SC,273.6243867,Mask Req,Required,Private
+218414,Newberry County,45071,Newberry College,SC,295.6882525,Mask Req,Required,Private
+218654,Beaufort County,45013,University of South Carolina Beaufort,SC,192.939181,Mask Req,Required,Private
+218663,Richland County,45079,University of South Carolina-Columbia,SC,253.418048,Mask Req,Required,Private
+219198,Yankton County,46135,Mount Marty University,SD,218.6454569,Mask Req,Not Required,Private
+219374,Todd County,46121,Sinte Gleska University,SD,239.7103103,Mask Req,Required,Public
+219806,Jefferson County,47089,Carson-Newman University,TN,247.4692697,Mask Req,Not Required,Private
+219949,Wilson County,47189,Cumberland University,TN,248.0302291,Mask Req,Not Required,Private
+220631,Claiborne County,47025,Lincoln Memorial University,TN,243.4229766,Mask Req,Not Required,Private
+220701,Giles County,47055,Martin Methodist College,TN,272.8135234,Mask Req,Required,Public
+220862,Shelby County,47157,University of Memphis,TN,216.5315259,Mask Req,Not Required,Public
+220978,Rutherford County,47149,Middle Tennessee State University,TN,248.1129384,Mask Req,Not Required,Public
+221953,Greene County,47059,Tusculum University,TN,274.4916946,Mask Req,Not Required,Private
+221999,Davidson County,47037,Vanderbilt University,TN,237.6884803,Mask Req,Required,Private
+226091,Jefferson County,48245,Lamar University,TX,160.6514704,Mask Req,Not Required,Public
+226471,Bell County,48027,University of Mary Hardin-Baylor,TX,158.8826268,Mask Req,Not Required,Private
+227881,Walker County,48471,Sam Houston State University,TX,217.2568239,Mask Req,Not Required,Public
+228459,Hays County,48209,Texas State University,TX,224.9652451,Mask Req,Not Required,Public
+228468,Johnson County,48251,Southwestern Adventist University,TX,211.8757204,Mask Req,Not Required,Private
+228653,Galveston County,48167,The University of Texas Medical Branch at Galveston,TX,240.9187562,Mask Req,Required,Public
+230913,Lamoille County,50015,Northern Vermont University,VT,128.0279335,Mask Req,Required,Public
+231581,Rockingham County,51165,Bridgewater College,VA,151.6716195,Mask Req,Required,Private
+232025,Washington County,51191,Emory & Henry College,VA,219.0738818,Mask Req,Required,Private
+232982,Norfolk City,51710,Old Dominion University,VA,149.7495037,Mask Req,Required,Public
+233897,Wise County,51195,The University of Virginia's College at Wise,VA,234.9168067,Mask Req,Not Required,Public
+233921,Montgomery County,51121,Virginia Polytechnic Institute and State University,VA,162.6613214,Mask Req,Required,Public
+235097,Spokane County,53063,Eastern Washington University,WA,204.416117,Mask Req,Required,Public
+236896,Walla Walla County,53071,Walla Walla University,WA,214.4065172,Mask Req,Not Required,Private
+237783,Harrison County,54033,Salem University,WV,253.567564,Mask Req,Required,Private
+237899,Kanawha County,54039,West Virginia State University,WV,227.9283522,Mask Req,Not Required,Public
+237932,Ohio County,54069,West Liberty University,WV,227.9385419,Mask Req,Not Required,Public
+238032,Monongalia County,54061,West Virginia University,WV,200.527197,Mask Req,Not Required,Public
+239071,Jefferson County,55055,Maranatha Baptist University,WI,217.6125468,Mask Req,Not Required,Private
+241410,Ponce Municipio,72113,Pontifical Catholic University of Puerto Rico-Ponce,PR,110.1595788,Mask Req,Required,Private
+241614,Trujillo Alto Municipio,72139,Universidad Teologica del Caribe,PR,122.7077365,Mask Req,Required,Public
+243188,Utuado Municipio,72141,University of Puerto Rico-Utuado,PR,94.38636453,Mask Req,Required,Private
+243197,Mayagüez Municipio,72097,University of Puerto Rico-Mayaguez,PR,108.9245874,Mask Req,Required,Private
+260813,Arapahoe County,8005,Platt College-Aurora,CO,197.1377352,Mask Req,Required,Private
+433660,Lee County,12071,Florida Gulf Coast University,FL,214.283803,Mask Req,Required,Public
+438498,Alexandria City,51510,Stratford University,VA,164.6055603,Mask Req,Not Required,Private
+441937,Ventura County,6111,California State University-Channel Islands,CA,186.0384667,Mask Req,Required,Public
+446048,Collier County,12021,Ave Maria University,FL,190.5769397,Mask Req,Not Required,Private
+490753,Knox County,23013,Maine Media College,ME,127.323681,Mask Req,Required,Private
+492476,Villalba Municipio,72149,EDP University of Puerto Rico-Villalba,PR,107.1103165,Mask Req,Required,Private

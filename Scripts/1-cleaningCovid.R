@@ -25,7 +25,7 @@ covidData <-
          casesPerCapita7DayChange = ifelse(cases_per_100K_7_day_count_change=="suppressed", 0, cases_per_100K_7_day_count_change),
          casesPerCapita7DayChange = as.numeric(gsub("\\,", "", casesPerCapita7DayChange)),
          pctTestsPositive7Days = ifelse(percent_test_results_reported_positive_last_7_days=="suppressed", NA, percent_test_results_reported_positive_last_7_days)) %>%
-  select(-c(cases_per_100K_7_day_count_change,percent_test_results_reported_positive_last_7_days))
+  dplyr::select(-c(cases_per_100K_7_day_count_change,percent_test_results_reported_positive_last_7_days))
 
 # Somehow there are 15 negative values in here. I have no idea what a negative value would mean and there's no documentation on it that I can find so I hope they go away when we match the counties to schools.
 table(covidData$casesPerCapita7DayChange<0)
@@ -48,6 +48,15 @@ df <- covidData[covidData$fips_code%in%negCounties, c("fips_code", "date", "case
 # So I'm going to assume this was an error and convert this value to a 0
 arrange(df[df$fips_code==29147,], date)
 covidData[1114441, "casesPerCapita7DayChange"] <- 0
+
+########################
+df2 <- covidData[covidData$fips_code==48377, c("fips_code", "date", "casesPerCapita7DayChange")] %>%
+  filter(date>=mdy("1/10/21") & date <= mdy("1/20/21"))
+
+arrange(df2, date)
+covidData[which(covidData$casesPerCapita7DayChange==-119.332), "casesPerCapita7DayChange"] <- 0
+#######################
+
 #########################################################
 
 # Calculate our response for the study: 
