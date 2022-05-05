@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.2)  5 MAY 2022 04:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.2)  5 MAY 2022 15:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,66 +604,100 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <CollegeCovidPolicies_files/figure-latex/hasse-1.pdf, id=48, 469.755pt x 325.215pt>
 File: CollegeCovidPolicies_files/figure-latex/hasse-1.pdf Graphic file (type pdf)
 <use CollegeCovidPolicies_files/figure-latex/hasse-1.pdf>
-Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/hasse-1.pdf  used on input line 162.
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/hasse-1.pdf  used on input line 172.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
 [1
 
 {c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2 <./CollegeCovidPolicies_files/figure-latex/hasse-1.pdf>]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 228.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 231.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 231.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 231.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 242.
 (c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 228.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 228.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 228.
-<CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf, id=70, 289.08pt x 144.54pt>
+<CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf, id=70, 289.08pt x 289.08pt>
 File: CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf Graphic file (type pdf)
 <use CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf>
-Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf  used on input line 245.
-(pdftex.def)             Requested size: 289.09251pt x 144.54623pt.
-[3 <./CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf>]
-<CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf, id=91, 469.755pt x 325.215pt>
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf  used on input line 260.
+(pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
+[3]
+<CollegeCovidPolicies_files/figure-latex/vizByType-1.pdf, id=83, 469.755pt x 325.215pt>
+File: CollegeCovidPolicies_files/figure-latex/vizByType-1.pdf Graphic file (type pdf)
+<use CollegeCovidPolicies_files/figure-latex/vizByType-1.pdf>
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/vizByType-1.pdf  used on input line 308.
+(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
+[4 <./CollegeCovidPolicies_files/figure-latex/showVizByVax-1.pdf>]
+
+LaTeX Warning: Reference `fig:vizByType' on page 5 undefined on input line 311.
+
+<CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf, id=98, 469.755pt x 325.215pt>
 File: CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf Graphic file (type pdf)
 <use CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf>
-Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf  used on input line 292.
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf  used on input line 338.
 (pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-<CollegeCovidPolicies_files/figure-latex/strip-1.pdf, id=93, 469.755pt x 325.215pt>
+<CollegeCovidPolicies_files/figure-latex/strip-1.pdf, id=100, 289.08pt x 289.08pt>
 File: CollegeCovidPolicies_files/figure-latex/strip-1.pdf Graphic file (type pdf)
 <use CollegeCovidPolicies_files/figure-latex/strip-1.pdf>
-Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/strip-1.pdf  used on input line 312.
-(pdftex.def)             Requested size: 469.75386pt x 325.2142pt.
-[4 <./CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf>] [5 <./CollegeCovidPolicies_files/figure-latex/strip-1.pdf>]
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/strip-1.pdf  used on input line 359.
+(pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
+[5 <./CollegeCovidPolicies_files/figure-latex/vizByType-1.pdf>] [6 <./CollegeCovidPolicies_files/figure-latex/wormPlot-1.pdf>]
+<CollegeCovidPolicies_files/figure-latex/interaction-1.pdf, id=127, 289.08pt x 289.08pt>
+File: CollegeCovidPolicies_files/figure-latex/interaction-1.pdf Graphic file (type pdf)
+<use CollegeCovidPolicies_files/figure-latex/interaction-1.pdf>
+Package pdftex.def Info: CollegeCovidPolicies_files/figure-latex/interaction-1.pdf  used on input line 374.
+(pdftex.def)             Requested size: 289.09251pt x 289.09251pt.
+[7 <./CollegeCovidPolicies_files/figure-latex/strip-1.pdf>]
 
-LaTeX Warning: Reference `tab:showAnovaTable' on page 6 undefined on input line 351.
+LaTeX Warning: Reference `fig:interaction' on page 8 undefined on input line 376.
 
-[6] [7] [8]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 493.
+
+LaTeX Warning: Reference `tab:showAnovaTable' on page 8 undefined on input line 411.
+
+[8 <./CollegeCovidPolicies_files/figure-latex/interaction-1.pdf>] [9] [10] [11]
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 584.
 (c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 620.
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 711.
 (c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [9]
-Underfull \vbox (badness 10000) detected at line 703
+) [12]
+Underfull \vbox (badness 10000) detected at line 856
  []
 
 
-Underfull \vbox (badness 10000) detected at line 703
+Underfull \vbox (badness 10000) detected at line 856
  []
 
-[10]
-Underfull \vbox (badness 10000) detected at line 703
+[13]
+Underfull \vbox (badness 10000) detected at line 856
  []
 
 
-Underfull \vbox (badness 10000) detected at line 703
+Underfull \vbox (badness 10000) detected at line 856
  []
 
-[11] [12] (./CollegeCovidPolicies.aux)
+[14]
+Underfull \vbox (badness 10000) detected at line 856
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 856
+ []
+
+[15]
+Underfull \vbox (badness 10000) detected at line 856
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 856
+ []
+
+[16] [17] (./CollegeCovidPolicies.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -671,18 +705,18 @@ Package rerunfilecheck Info: File `CollegeCovidPolicies.out' has not changed.
 (rerunfilecheck)             Checksum: 1ADBE28D79036B2DDBDA2F31E3B20EE5;1352.
  ) 
 Here is how much of TeX's memory you used:
- 14454 strings out of 480265
- 238935 string characters out of 5892808
- 550799 words of memory out of 5000000
- 32052 multiletter control sequences out of 15000+600000
- 520221 words of font info for 72 fonts, out of 8000000 for 9000
+ 14477 strings out of 480265
+ 240025 string characters out of 5892808
+ 557799 words of memory out of 5000000
+ 32069 multiletter control sequences out of 15000+600000
+ 515958 words of font info for 71 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 69i,10n,79p,619b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}<c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
-Output written on CollegeCovidPolicies.pdf (12 pages, 310627 bytes).
+ 69i,10n,79p,619b,396s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/Candace/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti10.pfb>
+Output written on CollegeCovidPolicies.pdf (17 pages, 326017 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 109 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 274 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 119 words of extra memory for PDF output out of 10000 (max. 10000000)
 

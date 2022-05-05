@@ -42,6 +42,10 @@ options(knitr.kable.NA = "")
 
 COVID-19 is a novel virus that is highly transmissible and for much of a county’s general population, dangerous. COVID-19 has the potential to put even healthy college students on a ventilator in critical condition. In 2021, COVID vaccines became approved for safe use among the public. Leaders throughout the community have been trying to spread information to encourage as many people to get vaccinated as possible. In colleges and universities, many of their leaders have done the same. For the return of students in Fall 2021, most universities aimed for a fully in-person learning experience. However, with COVID cases still on the rise and data on its long-term effects limited, learning institutions still had to take precautions. These precautions include requiring proof of a COVID vaccination to come back to campus. Many colleges play a prevalent role in their communities. So, it would make sense that a college’s decisions on covid precautionary policies could have an impact on the county’s COVID cases. Our research question is as follows: How did Fall 2021 COVID-19 policies at American universities relate to the arithmetic mean of daily new COVID-19 cases/capita among the universities’ home counties in the time-frame of September 1st to but not including December 1st? 
 
+We were going to also include mask policies in our analysis, however, when we finished gathering our data, the factors of mask requirements and vaccine requirements were extremely unbalanced. Out of our sample of 280 schools, we only found 4 schools that did not have an indoor mask mandate at any point during their fall semester. Vaccine requirements however were much more varied among different schools so we decided to focus on vaccines instead. 
+
+specify 50 states + PR  + surrogate response
+
 # Study Design & Methods
 
 ```{r hasse, fig.cap="Hasse Diagram"}
@@ -59,16 +63,15 @@ hasseDiagram::hasse(
 
 ```
 
-The Hasse Diagram has to be changed.
 
 In our study, we collected data on the COVID policies of different colleges and universities in the United States of America. In the “United States” we also included schools from Puerto Rico as it is a US territory. First, we decided to take our sample from undergraduate-serving 4-year colleges and universities as well as professional schools within a county in the United States. If our sample ended up having multiple schools from the same county, we chose the school that had the larger/largest student body population. In drawing a sample we opted to filter out schools that were primarily online and focused on schools with physical campuses. We drew a total of 280 schools in our sample. We got our covid data for our sample from a dataset provided by the CDC. This dataset included a list of 877 counties in the United States and its corresponding average daily new COVID cases per capita, averaged from September 1st to but not including December 1st. The capita was per 100k people. We then merged together the schools that we selected, its corresponding county, and its corresponding COVID information. To find out what a school’s COVID policies were, we initially gathered a smaller list of schools that had vaccine mandates from the Chronicle of Education’s dataset.  From there, we selected our sample of colleges from a dataset that included all the schools in the US that got through our filter. Then, we gathered our final data on school COVID policies manually by looking up each school and verifying what state it was in, verifying its name, checking the date its vaccine policy was enforced, checking its mask policy, checking if the school was public or private, checking the date its vaccine policy was enforced, and what its vaccine policy actually was. We coded masks on a binary level for 0 being the school never had a mask policy where masks were required indoors for all students from September 1st to and not including December 1st and 1 being that it did. We coded the type of school as being either “private” or “public” and we decided to use this as a block in our study. We know that a school’s status as public can put far more limits on it as for vaccination mades than a private school so we wanted to account for that. We then coded vaccine requirements on a binary level as well with 0 being the school never required vaccines for ALL (not including special health/religious exemptions) students at the school BY Sept. 1, 2021 and a 1 if they did. 
 
 Our primary response is the average daily new COVID cases per capita from September 1st to December 1st. Our only factor of interest is vaccine requirements which has two levels (0, Vaccines NOT required for students at the school BY Sept. 1, 2021 or 1, vaccines required for ALL [not including special health/religious exemptions] students at the school BY Sept. 1, 2021). We can make causal inference about  undergraduate-serving 4-year colleges and universities as well as professional schools within a county in the United States because we took a random sample from this population so we have the required randomization. ANOVA methods seem to be an appropriate way to address our research question with this data. Figure 1 shows the Hasse diagram for this study. We have positive degrees of freedom everywhere in our Hasse diagram; we have sufficient degrees of freedom to estimate effects and residuals and we can use an additive model.
 
-We will adopt the following hypotheses:
+Let $y_{ijk}$ represent the a new daily covid cases per capita in a US county, $\mu_{...}$ represent the Grand Sample Arithmetic Mean (GSAM) of the average new daily covid cases , $\beta_j$ represent the effect of public vs private school block, $\alpha_i$ represent the effect of vaccine policy levels, and $\epsilon_{ijk}$ represent the residual error for individual school with vaccine policy $i$ and school type $j$. Then, we will adopt the following hypotheses:
 
-  + $H_0$: Vaccine requirements at a college or university are NOT related to the daily new COVID-19 cases/capita among the universities’ home counties
-  + $H_A$: Vaccine requirements at a college or university ARE related to the daily new COVID-19 cases/capita among the universities’ home counties
+  + $H_0: y_{ijk}=\mu...+\ \beta_{j}\ +\ \epsilon_{ijk}$. Vaccine requirements at a college or university are NOT related to the daily new COVID-19 cases/capita among the universities’ home counties.
+  + $H_A: y_{ijk}=\mu...+\ \beta_{j}\ +\alpha_{i}\ +\ \epsilon_{ijk}$ for some $\alpha_{i}\neq0$. Vaccine requirements at a college or university ARE related to the daily new COVID-19 cases/capita among the universities’ home counties
   
 We will control our overall Type 1 error risk at 5% and an unusualness threshold of 5%.
 
@@ -101,7 +104,7 @@ setnames(covidRaw,
          old = c("vaccine","private"),
          new = c("Policy", "Type"))
 
-# Select only the variables we need for One-Way ANOVA
+# Select only the variables we need for One-Way Blocked ANOVA
 covid <- covidRaw[,c("avgCasePerCapita","Policy", "Type")]
 ```
 
@@ -143,7 +146,6 @@ usmap::plot_usmap(regions="counties",
                   values="color")+ 
   ggplot2::scale_fill_manual(values = c("red", "yellow"))
 ```
-
 
 
 ```{r makeViz, echo=FALSE, include=FALSE}
@@ -245,7 +247,7 @@ covidStatsByVax <-
 
 
   
-```{r showVizByVax, fig.cap="Graph", fig.height=2, fig.width=4, fig.pos="H"}
+```{r showVizByVax, fig.cap="Graph", fig.height=4, fig.width=4, fig.pos="H"}
 ggarrange(densityByVax, boxByVax, ncol=1)
 ```
   
@@ -266,7 +268,28 @@ covidStatsByVax %>%
     latex_options = c("scale_down", "HOLD_position"))
 ```  
 
-Comment on vaccine policy stats.
+Table \ref{tab:showVaxStats} shows the summary statistics  for the average daily new covid cases by vaccine policy broken down by no vaccine required and vaccine required. This table shows that the median average daily new covid cases for schools without a vaccine requirement are higher at ~217.63 while schools without a vaccine requirement had a lower median at ~205.37. Our sample arithmetic mean of the average daily new covid cases for schools without a vaccine requirement are significantly higher at ~49.94 while schools with a vaccine had a sample arithmetic mean of ~198.89. The minimum average daily new covid cases for schools without a vaccine requirement are much higher at ~114.12 compared to the average daily new covid cases for schools with a vaccine requirement. Schools with a vaccine requirement had a minimum average daily new covid cases of ~49.52. Surprisingly, the maximum average daily new covid cases for schools without a vaccine requirement is lower at ~308.72 while for schools with a vaccine requirement, the maximum is 316.74.
+
+```{r vizByType}
+ggplot(data = covid,
+       mapping = aes(
+         x = Type,
+         y = avgCasePerCapita,
+         fill = Policy)) +
+  geom_boxplot() +
+  theme_minimal() +
+  xlab("School Type") +
+  ylab("Average New Daily Cases (Per Capita)") +
+  labs(fill = "Vaccine Policy") +
+  theme(legend.position = "right",
+        text = element_text(size = 10)) +
+   scale_fill_manual(name = "Vaccine Policy", 
+                      labels = c("Not Required", "Required"), 
+                      values = c("#FA9892", "#40CFD3")) 
+```
+
+
+Looking at the boxplots for private schools in Figure \ref{fig:vizByType}, we see again that the median average daily new covid cases for schools without a vaccine requirement is higher than that of schools with a vaccine requirement. We can also see that there is a larger spread for vaccine-required schools. Both vaccine-required and non-vaccine-required schools have low outliers. Looking at boxplots for public schools, we see again that the median average daily new covid cases for schools without a vaccine requirement is higher than that of schools with a vaccine requirement- however this time, there is a greater difference between the two. The schools that require vaccines have a larger spread and a low outlier and the schools that do not require vaccines have a high outlier.
 
 # Results
   
@@ -277,7 +300,7 @@ observations.
   
 ```{r anovaModel}
 covidAOV <- 
-  aov(formula= avgCasePerCapita ~ Policy,
+  aov(formula= avgCasePerCapita ~ Type + Policy,
       data = covid,
       na.action = "na.omit")
 
@@ -287,9 +310,9 @@ covidANOVA <- anova(covidAOV)
 ```{r makeAnovaTable}
 anovaTable <-
   parameters::model_parameters(model = covidAOV,
-                               omega_squared = "raw",
-                               eta_squared = "raw",
-                               epsilon_squared = "raw") %>%
+                               omega_squared = "partial",
+                               eta_squared = "partial",
+                               epsilon_squared = "partial") %>%
   knitr::kable(digits = 4,
                col.names = c("Source", "SS", "df", 
                              "MS", "F", "p-value",
@@ -309,7 +332,9 @@ anovaTable <-
 ```{r makePointEst}
 pointEst <- dummy.coef(covidAOV)
 pointEst <- unlist(pointEst)
-names(pointEst) <- c("GSAM", "No Vaccine Requirement", "Vaccine Required")
+names(pointEst) <- c("GSAM", "Private School", 
+                     "Public School", "No Vaccine Requirement",
+                     "Vaccine Required")
 
 pointEstimatesTable <-
 data.frame("Estimate" = pointEst) %>%
@@ -345,14 +370,17 @@ ggplot(mapping = aes(sample=scale(residuals(covidAOV)))) +
 
 ```  
   
-To get a better view of exactly how many of our residuals had non-Guassian behavio, we show a worm plot (a de-trended QQ plot) in Figure \ref{fig:wormPlot} with a 90% confidence envelope. The residuals appear approximately Gaussian ; only 22 of the points (~7% of the residuals) fall outside of the 90% confidence envelope. Additionally, the residuals have a sample skewness of ~ -0.5 and a sample kurtosis of ~ 0.43, both of which are close to 0 as they would be for a Guassian distribution. So, we will act as if the Gaussian assumption is satisfied. 
-  
 ```{r guassianAssump, echo=FALSE, include=FALSE}
-psych::skew(covidAOV$residuals)
-psych::kurtosi(covidAOV$residuals)
-```  
+skew <- psych::skew(covidAOV$residuals)
+kurt <- psych::kurtosi(covidAOV$residuals)
+``` 
+
+
+To get a better view of exactly how many of our residuals had non-Guassian behavior, we show a worm plot (a de-trended QQ plot) in Figure \ref{fig:wormPlot} with a 90% confidence envelope. The residuals appear approximately Gaussian ; only 9 of the points (~3% of the residuals) fall outside of the 90% confidence envelope for following a Guassian distribution, which we consider an acceptable amount. Additionally, the residuals have a sample skewness of ~ `r round(skew,2)` and a sample kurtosis of ~ `r round(kurt, 2)`, both of which are close to 0 as they would be for a Guassian distribution. So, we will act as if the assumption of Gaussian residuals is satisfied. 
   
-```{r qqPlot, echo=FALSE, include=FALSE}
+ 
+  
+```{r qqPlot, eval=FALSE, echo=FALSE, include=FALSE}
 # QQ Plot for Residuals
 car::qqPlot(x = residuals(covidAOV),
             distribution = "norm",
@@ -362,41 +390,73 @@ car::qqPlot(x = residuals(covidAOV),
             ylab = "Residuals (Cases Per Capita)")
 ```
   
-```{r strip,  fig.cap="Strip Chart for Vaccine Policy Study"}
-ggplot(data = data.frame(residuals = residuals(covidAOV),
-                         fitted = fitted.values(covidAOV)),
+```{r strip,  fig.cap="Tukey-Anscombe Plot for Vaccine Policy Study", fig.height=4, fig.width=4}
+ggplot(data = 
+         data.frame(residuals = residuals(covidAOV),
+                    fitted = fitted.values(covidAOV)),
        mapping = aes(x = fitted, y = residuals)) +
-  geom_point(size = 2, alpha=0.2, col="#419AE6") +
-  theme_minimal() +
-  xlab("Fitted values (Avg. Per Capita Daily Cases)") +
-  ylab("Residuals (Avg. Per Capita Daily Cases)")
+  geom_point(size = 2, alpha=0.3) +
+  geom_hline(yintercept = 0,
+             linetype = "dashed",
+             color = "grey50") +
+  geom_smooth(formula = y ~ x,
+              method = stats::loess,
+              method.args = list(degree = 1),
+              se = FALSE,
+              size = 1,
+              color="#419AE6") +
+theme_minimal() +
+xlab("Fitted values (Avg. New Daily Cases Per Capita)") +
+ylab("Residuals (Avg. New Daily Cases Per Capita)")
 ```
 
   
-In Figure \ref{fig:strip} we show a strip chart for our residuals. There seems to be no significant difference in the spread of the residuals across different fitted values, so we will act as if the assumption of homoscedastic residuals is satisfied.
+In Figure \ref{fig:strip} we show a Tukey-Anscombe plot for our residuals. The fitted line for this plot is alomst perfectly horizontal, and there seems to be no significant difference in the spread of the residuals across different fitted values. We also see no clear patterns in the plot that would make us concerned about a lack of equal variance across the groups. We will act as if the assumption of homoscedastic residuals is satisfied.  
   
-```{r interaction, echo=FALSE, include=FALSE, eval=FALSE}
-ggplot2::ggplot(
-data = covid,
-mapping = aes(
-x = Policy,
-y = Type,
-color = Type,
-shape = Type,
-linetype = Type,
-group = Type
-)
-) +
-stat_summary(fun = "mean", geom = "point") +
-stat_summary(fun = "mean", geom = "line") +
-ggplot2::theme_bw() +
-xlab("Policy") +
-ylab("School Type") +
-labs(color = "Type") +
-  theme(
-legend.position = "right"
-)
+```{r interaction, fig.dim=c(4,4)}
+
+interactionDf <-
+  covid %>%
+  group_by(Policy, Type) %>%
+  summarise(groupMean = mean(avgCasePerCapita))
+
+ggplot2::ggplot(data = interactionDf,
+                mapping = aes(
+                  x = Policy,
+                  y = groupMean,
+                  shape = Type,
+                  color=Type,
+                  linetype=Type))+
+  geom_point(size=4) +
+  geom_line(mapping=aes(x=Policy, 
+                        y=groupMean,
+                        group=Type),
+            size=1) +
+  # Manally set the legend
+  scale_color_manual(name = "School Type", 
+                  labels = c("Public", "Private"), 
+                  values = c("#F6DC64", "#A587CF")) +
+  scale_shape_manual(name = "School Type", 
+                  labels = c("Public", "Private"), 
+                  values = c(16, 17)) +
+  scale_linetype_manual(name = "School Type", 
+                  labels = c("Public", "Private"), 
+                  values = c(1, 2)) +
+  theme_minimal() +
+  xlab("Vaccine Policy") +
+  ylab("Group SAM") +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  ggtitle("Average New Daily Cases Per Capita") +
+  labs(shape = "School Type",
+       color="School Type",
+       linetype="School Type") +
+  theme(legend.position = "right")
+  
 ```
+  
+  
+The interaction plot in Figure \ref{fig:interaction} shows the sample arithmetic mean (SAM) for each combinations of School Type and Vaccine Policy present in our study. Although the lines aren't parallel, we see the same trend in Group SAM Average New Daily Cases within both blocks. We will act as if there is no interaction between the Vaccine Policy factor and the School Type block.  
+  
   
 To assess whether the independence of observations assumption is met, we will consider the context of the data. In our selection process, we verified that no two schools in our sample came from the same county in order to ensure independence of observations. However, there are instances of multiple counties in the same state. We will keep the potential for spatial dependence in mind but will assume that the independence assumption is satisfied and continue with our study.  
   
@@ -406,26 +466,40 @@ To assess whether the independence of observations assumption is met, we will co
 anovaTable
 ```
 
-We can see in Table \ref{tab:showAnovaTable} that a college or univeristy's vaccine policy accounted for ~9.747 times as much
-variation in the average new daily COVID-19 cases (per capita) of the county that the school is located in as the residuals in this model in the fall of 2021. Since our p-value is less than our unusualness threshold of 5% (0.002 < 0.05), we will reject the null hypothesis; We decide to act as if a college or university's vaccine policy for the fall 2021 semester did impact the average new daily COVID-19 cases per capita of the county that the school is located in.
-In particular, a school's vaccine policy accounted for a ~30.3% of the variation in a county's average new daily COVID-19 cases per capita ( $\omega^2$ = 0.0303, $\epsilon^2$ = 0.0304, $\eta^2$ = 0.0339).
+In Table \ref{tab:showAnovaTable} can see here in our ANOVA table that the status of a school as either requiring vaccines or not requiring vaccines (“Policy”) accounts for ~9.65 times as much variation in average daily new covid cases as the residuals in this model. Since our p-value is less than our unusualness threshold of 5% (~0.0021 < 0.05), we will reject the null hypothesis and decide to act as if a school being public or private does have an impact on  average daily new covid cases/capita in a school's home county. In particular, vaccine policy accounts for a ~3% of the variation average daily new covid cases ( $\omega^2$ = 0.0300, $\epsilon^2$ = 0.0337, $\eta^2$ = 0.0302).
+
+  
+```{r relativeEfficiency, echo=FALSE, include=FALSE}
+# Calculate Relative efficiency  
+block.RelEff(aov.obj = covidAOV,
+             blockName = "Type",
+             trtName = "Policy")
+```
+  
+The relative efficiency of the School Type block is 1.037; we would need about 3.7% more observations per group if we were to conduct this study without the School Type block. Although blocking did not have a big impact on the sample size for our study, introducing the School Type block was helpful for reducing some of the unexplained variation in our model and addressing the Non-Guassian behavior of some of the residuals.
+
   
 ```{r showPointEstimates}
 pointEstimatesTable
 ```
 
-As a whole, the sample of undergraduate-serving 4-year colleges, universities, and professional schools accumulated 207.15 average daily new COVID-19 cases per capita per school. We see that schools that did not start the Fall 2021 semester requiring students to get the COVID-19 vaccine performed worse than the GSAM baseline; such schools accumulated 8.27 *more* average daily new COVID-19 cases per capita per school (keep in mind that *more* cases is the *worse* outcome in this context). Schools that started the Fall 2021 semester requiring students to get the COVID-19 vaccine performed better than the GSAM baseline; such schools accumulated 8.27 *less* average daily new COVID-19 cases per capita per school.
+The sample of schools as a whole accumulated a rate of 207.15 average daily new covid cases (per capita)/school (GSAM). We can also see the factor level (vaccine policies) effects estimates. Schools without a vaccine requirement accumulated  8.22 more average daily new covid cases (per capita)/school than the GSAM baseline. Schools with a vaccine requirement accumulated 8.22 less average daily new covid cases (per capita)/school than the GSAM baseline. This suggests that the schools without vaccine requirements performed worse than the baseline, white the schools with vaccine requirements performed better than the baseline.
   
   
 # Discussion 
   
-Here we can put some thing about our conclusion with vaccines and what that means in a broader real-world context.
+After our analysis of the data and exploring our research question of whether or not Fall 2021 COVID-19 policies at American universities relate to the arithmetic mean of daily new COVID-19 cases/capita among the universities’ home counties in the time-frame of September 1st to but not including December, 1st we found that a school’s vaccination policy did in fact seem to have an impact on their county’s average daily new COVID-19 cases/capita. According to our anova model, the vaccine policies of colleges and universities account for ~9.65 times as much variation in average daily new covid cases/capita in the school’s home county as the residuals in this model.We found that this impact is statistically significant at the level of .02% and this impact had practical significance at the 3% level. We noticed that the data spread for schools that had a vaccination requirement was much larger than for those without a vaccination requirement. This meant that schools with a vaccine requirement had a much lower minimum value of average daily new COVID-19 cases/capita than schools without a vaccination requirement. Though this also meant that schools with a vaccination requirement had a larger maximum value for average daily new COVID-19 cases/capita, the difference was not as large as it was in comparing the two minimum values. In addition, when we compare our baseline GSAM of average daily new covid cases (per capita)/school, the schools that had a vaccine requirement accumulated 8.22 average daily new cases less than the baseline while the schools without a vaccine requirement did the inverse, accumulating 8.22 average daily new cases more than the baseline. 
+  
   
 ## Limitations  
   
-Since the early days of the COVID-19 pandemic, many colleges and universities have regularly disseminated information on the impact of the COVID-19 virus on the school community and the surrounding municipalities. In an understandably non-uniform manner, each school responded the the state of emergency in a unique manner. Many schools have archives of policies concerning COVID-19 and dashboards of COVID-19 infection and hospitalization rates for the student body and faculty, but there is no consistent formatting across schools nor is there a standard protocol for archiving past data. Individual schools typically have information regarding COVID-19 as easily accessible, but for a study this size (i.e. sample size in the hundreds) it did not seem feasible to manually search for the policies for every school in our study. TOther studies like this likely suffer from the same issues with finding consistently formatted information, and it is likely that many studies have a hard time getting past an exploratory phase because of the difficulty in finding data. This is unfortunate because there is much value to be found in the research of the impact of the COVID-19 virus in education.
+Since the early days of the COVID-19 pandemic, many colleges and universities have regularly disseminated information on the impact of the COVID-19 virus on the school community and the surrounding municipalities. In an understandably non-uniform manner, each school responded the the state of emergency in a unique manner. Many schools have archives of policies concerning COVID-19 and dashboards of COVID-19 infection and hospitalization rates for the student body and faculty, but there is no consistent formatting across schools nor is there a standard protocol for archiving past data. Individual schools typically have information regarding COVID-19 as easily accessible, but for a study this size (i.e. sample size in the hundreds) it did not seem feasible to manually search for the policies for every school in our study. Thus, we opted to use a surrogate response from county-level data, which are more consistently formatted because they are provided by the government, instead of direct observations of the attributes we were interested in.
+  
+Other studies like this likely suffer from the same issues with finding consistently formatted information, and it is likely that many studies have a hard time getting past an exploratory phase because of the difficulty in finding data. This is unfortunate because there is much value to be found in the research of the impact of the COVID-19 virus in education.
   
 One main limitation for this study was time; with a reasearch team of only two individuals and a large amount of time dedicated to finding and cleaning the data, there was not much room for flexibility in our design and the scope of our study. This is further discussed in the next section.
+  
+
   
 ## Scope Reduction
   
@@ -437,9 +511,6 @@ The next reduction in scope impacted the nuance of our factor levels. Comprehens
 
 The scope of our study was finally reduced to a single-factor study because of our problematic data selection process. We ended up randomly selecting our sample of schools from comprehensive government data courtesy of The Integrated Postsecondary Education Data System's (IPEDS) surveys. We intended to matching some of the schools to a list of vaccine and mask policies obtained from The Chronicle of Higher Education and manually research the rest. Unfortunately, this resulted in 276 out of the 280 sampled schools having a masking policy (specifically, a policy that required masks indoors for all students). This heavy imbalance led us to decide to drop the mask factor from our study and focus only on schools' vaccine policies, accounting for the block of school type.
   
-The final reduction of scope resulted in the block of school type being dropped from the study as a result of the low relative efficiency of the ANOVA model including the block, the lack of apparent variation being screened by the block, and our own faulty blocking technique. The latter of these was the final deciding factor; it wasn't until after we had begun exploring the data (post manual data collection) that we realized we had not stratified our population of schools before making our sample selection. Without the time to manually collect data from a new stratified sample, blocks were dropped from the study.  
-  
-Better planning and organization could have prevented much of the scope reduction we've discussed here. We believe we have learned from this process and hope others observing our work can learn from us as well.   
   
 ```{r makeVizByType}
 densityByType <-
@@ -534,15 +605,16 @@ covidStatsByType %>%
 \newpage
 
 # Author Contributions
-
-The authors of this report would like to acknowledge their individual contributions to the report.
+  
+  + Candace cleaned the pre-processed data and contributed to the EDA, Results, and Discussion sections. Her code is available in the appendix below, but her entire project directory can be seen on [https://github.com/CLTodd/Stat461Final](GitHub) (Currently still being formatted).
+  + Jordan cleaned the post-processed data and contributed to the Introduction, Study Design, EDA, Results, and Discussion sections.
 
 
 \newpage
 
 # Code Appendix
 
-```{r codeAppendix, ref.label = knitr::all_labels(label!="makeViz", label!="map", label!="guassianAssump", label!="interaction", label!="makeVizByType", label!="calcTypeStats", label!="temp1", label!="temp2"), echo = TRUE, eval = FALSE}
+```{r codeAppendix, ref.label = knitr::all_labels(label!="makeViz", label!="map", label!="guassianAssump", label!="makeVizByType", label!="calcTypeStats", label!="temp1", label!="temp2", label!="qqPlot"), echo = TRUE, eval = FALSE}
 
 ```
 
